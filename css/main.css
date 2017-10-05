@@ -253,5 +253,24 @@ a.auth-soc-login-btn__facebook{
 .auth-soc-login-btn__messenger,
 a.auth-soc-login-btn__messenger{
 	background-image: linear-gradient(180deg, #23CDFF, #006EFF);
-	
+}
+
+.auth-radio-buttons-block{
+	margin: 40px 0 0 0;
+}
+
+.auth-radio-buttons-block p{
+	font-weight: 600;
+	line-height: 19px;
+	margin: 0 0 14px 0;
+}
+
+.auth-radio-buttons-block .ui.checkbox .box,
+.auth-radio-buttons-block .ui.checkbox label{
+	font-size: .86em;
+}
+
+.ui.form .auth-radio-buttons-block .grouped.fields .field,
+.ui.form .auth-radio-buttons-block .grouped.inline.fields .field{
+	margin: 9px 0 0 0;
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Telegram Log In</title>
+	<title>Log In</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/icon.min.css">
@@ -24,10 +24,10 @@
 						</a>
 					</div>
 					<div class="auth-sidebar-centered-content">
-						<form action="#" method="POST" class="ui form" id="telegram-login-form">
-							<h1 class="auth-heading">Вход</h1>
+						<form action="#" method="POST" class="ui form" id="telegram-register-form">
+							<h1 class="auth-heading">Регистрация</h1>
 							<div class="auth-heading-msg p-content-area">
-								<p>Войдите в свою учетную запись</p>
+								<p>Создайте свою учетную запись</p>
 							</div>
 							<div class="auth-fields-wrapper clearfix">
 								<div class="auth-field-wrapper field">
@@ -40,17 +40,30 @@
 										<input type="password" placeholder="Введите пароль" name="user-pass" id="user-pass">
 									</div>
 								</div>
-								<div class="clearfix">
-									<div class="ui checkbox checkbox-auth-top-margin">
-										<input type="checkbox" name="example">
-										<label>Запомнить меня</label>
+								<div class="auth-field-wrapper field">
+									<div class="ui input">
+										<input type="password" placeholder="Повторите пароль" name="user-pass-repeat" id="user-pass-repeat">
 									</div>
-									<button type="submit" class="ui button orange right floated submit">Войти</button>
 								</div>
-								<div class="auth-additional-links-container">
-									<a href="#" class="black-link">Забыли пароль?</a>
-									<br>
-									<a href="#">Зарегистрироваться</a>
+								<div class="clearfix">
+									<button type="submit" class="ui button orange right floated submit">Зарегистрироваться</button>
+								</div>
+								<div class="auth-radio-buttons-block">
+									<p>Получать уведомления в:</p>
+									<div class="grouped fields">
+										<div class="field">
+											<div class="ui radio checkbox">
+												<input type="radio" name="push-notifications"  value="telegram" checked="checked">
+												<label>Telegram</label>
+											</div>
+										</div>
+										<div class="field">
+											<div class="ui radio checkbox">
+												<input type="radio" name="push-notifications" value="off" >
+												<label>Не получать</label>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</form>
@@ -64,7 +77,7 @@
 	<script src="js/libs/semantic.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
-		$('#telegram-login-form')
+		$('#telegram-register-form')
 		  .form({
 		    inline : true,
 		    fields: {
@@ -83,6 +96,19 @@
 		          {
 		            type   : 'empty',
 		            prompt : 'Введите пароль'
+		          }
+		        ]
+		      },
+		      passwordRepeat: {
+		        identifier  : 'user-pass-repeat',
+		        rules: [
+		          {
+		            type   : 'empty',
+		            prompt : 'Повторите пароль'
+		          },
+		          {
+		            type   : 'match[user-pass]',
+		            prompt : 'Пароли не совпадают'
 		          }
 		        ]
 		      }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Log In</title>
+	<title>Social Log In</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/icon.min.css">
@@ -45,32 +45,5 @@
 	<script src="js/libs/jquery-3.2.1.min.js"></script>
 	<script src="js/libs/semantic.min.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		$('#telegram-login-form')
-		  .form({
-		    inline : true,
-		    fields: {
-		      tel: {
-		        identifier  : 'user-tel',
-		        rules: [
-		          {
-		            type   : 'regExp[/[0-9]{11}/i]',
-		            prompt : 'Введите номер в формате +380XXXXXXXXX'
-		          }
-		        ]
-		      },
-		      password: {
-		        identifier  : 'user-pass',
-		        rules: [
-		          {
-		            type   : 'empty',
-		            prompt : 'Введите пароль'
-		          }
-		        ]
-		      }
-		    }
-		  })
-		;
-	</script>
 </body>
 </html>
