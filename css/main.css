@@ -183,6 +183,10 @@ ol{
 	text-align: center;
 }
 
+.auth-heading-msg p{
+	line-height: 24px;
+}
+
 .auth-fields-wrapper{
 	margin: 40px 0 0 0;
 }
