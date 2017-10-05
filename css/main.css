@@ -110,7 +110,8 @@ ol{
 	display: block;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	font-family: 'object-fit: cover;';
 }
 
@@ -162,9 +163,16 @@ ol{
 
 .auth-sidebar-centered-content{
 	min-height: calc(100% - 130px);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 0 0 100px 0;
 }
 
@@ -209,6 +217,7 @@ ol{
 	display: inline-block;
 	margin: 0 0 5px 0;
 	color: #EC910E;
+	-webkit-transition: color .3s ease;
 	transition: color .3s ease;
 }
 
@@ -257,6 +266,7 @@ a.auth-soc-login-btn__facebook{
 
 .auth-soc-login-btn__messenger,
 a.auth-soc-login-btn__messenger{
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#23CDFF), to(#006EFF));
 	background-image: linear-gradient(180deg, #23CDFF, #006EFF);
 }
 
@@ -308,7 +318,8 @@ a.auth-soc-login-btn__messenger{
 	max-width: 100%;
 	background-color: #fff;
 	border-radius: 4px;
-	box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+	-webkit-box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+	        box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
 	position: absolute;
 	top: 60px;
 	left: 60px;
@@ -375,6 +386,7 @@ a.auth-soc-login-btn__messenger{
 	background-color: rgba(0,0,0,.85);
 	will-change: transform;
 	z-index: 100;
+	-webkit-transition: opacity .6s ease;
 	transition: opacity .6s ease;
 	pointer-events: none;
 	opacity: 0;
