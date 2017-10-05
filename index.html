@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Log In</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/icon.min.css">
+	<link rel="stylesheet" href="css/semantic.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="app">
+		<div class="auth-page-wrapper clearfix">
+			<div class="auth-page-bg">
+				<img src="assets/authorization/auth_bg.jpg" alt="Authorization background">
+			</div>
+			<div class="auth-sidebar-wrapper">
+				<div class="auth-sidebar-content-wrapper">
+					<div class="auth-sidebar-header-logo">
+						<a href="index.html">
+							<img src="assets/logo.svg" alt="website logo">
+						</a>
+					</div>
+					<div class="auth-sidebar-centered-content">
+						<form action="#" method="POST" class="ui form" id="telegram-login-form">
+							<h1 class="auth-heading">Вход</h1>
+							<div class="auth-heading-msg p-content-area">
+								<p>Войдите в свою учетную запись</p>
+							</div>
+							<div class="auth-fields-wrapper clearfix">
+								<div class="auth-field-wrapper field">
+									<div class="ui input">
+										<input type="tel" placeholder="Введите номер телефона" name="user-tel" id="user-tel">
+									</div>
+								</div>
+								<div class="auth-field-wrapper field">
+									<div class="ui input">
+										<input type="password" placeholder="Введите пароль" name="user-pass" id="user-pass">
+									</div>
+								</div>
+								<div class="clearfix">
+									<div class="ui checkbox checkbox-auth-top-margin">
+										<input type="checkbox" name="example">
+										<label>Запомнить меня</label>
+									</div>
+									<button type="submit" class="ui button orange right floated submit">Войти</button>
+								</div>
+								<div class="auth-additional-links-container">
+									<a href="#" class="black-link">Забыли пароль?</a>
+									<br>
+									<a href="#">Зарегистрироваться</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/libs/ofi.min.js"></script>
+	<script src="js/libs/jquery-3.2.1.min.js"></script>
+	<script src="js/libs/semantic.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$('#telegram-login-form')
+		  .form({
+		    inline : true,
+		    fields: {
+		      tel: {
+		        identifier  : 'user-tel',
+		        rules: [
+		          {
+		            type   : 'regExp[/[0-9]{11}/i]',
+		            prompt : 'Введите номер в формате +380XXXXXXXXX'
+		          }
+		        ]
+		      },
+		      password: {
+		        identifier  : 'user-pass',
+		        rules: [
+		          {
+		            type   : 'empty',
+		            prompt : 'Введите пароль'
+		          }
+		        ]
+		      }
+		    }
+		  })
+		;
+	</script>
+</body>
+</html>
