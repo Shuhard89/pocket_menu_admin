@@ -24,18 +24,36 @@
 						</a>
 					</div>
 					<div class="auth-sidebar-centered-content">
-						<h1 class="auth-heading">Вход</h1>
-						<div class="auth-heading-msg p-content-area">
-							<p>Войдите в свою учетную запись с помощью</p>
-						</div>
-						<div class="auth-soc-login-btns-wrapper">
-							<div class="auth-soc-login-btn-wrapper">
-								<a href="#" class="auth-soc-login-btn auth-soc-login-btn__facebook">Facebook</a>
+						<form action="#" method="POST" class="ui form" id="telegram-login-form">
+							<h1 class="auth-heading">Вход</h1>
+							<div class="auth-heading-msg p-content-area">
+								<p>Войдите в свою учетную запись</p>
 							</div>
-							<div class="auth-soc-login-btn-wrapper">
-								<a href="#" class="auth-soc-login-btn auth-soc-login-btn__messenger">Messenger</a>
+							<div class="auth-fields-wrapper clearfix">
+								<div class="auth-field-wrapper field">
+									<div class="ui input">
+										<input type="tel" placeholder="Введите номер телефона" name="user-tel" id="user-tel">
+									</div>
+								</div>
+								<div class="auth-field-wrapper field">
+									<div class="ui input">
+										<input type="password" placeholder="Введите пароль" name="user-pass" id="user-pass">
+									</div>
+								</div>
+								<div class="clearfix">
+									<div class="ui checkbox checkbox-auth-top-margin">
+										<input type="checkbox" name="example">
+										<label>Запомнить меня</label>
+									</div>
+									<button type="submit" class="ui button orange right floated submit">Войти</button>
+								</div>
+								<div class="auth-additional-links-container">
+									<a href="#" class="black-link">Забыли пароль?</a>
+									<br>
+									<a href="#">Зарегистрироваться</a>
+								</div>
 							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
