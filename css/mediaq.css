@@ -44,4 +44,8 @@
 	.map-location-card-content{
 		padding: 14px;
 	}
+
+	.ui.button.button-normal-reduce-sides-padding{
+		padding: .78571429em 1.2em .78571429em;
+	}
 }
