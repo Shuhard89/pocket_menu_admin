@@ -2,8 +2,19 @@
 
 	/* Mobile auth pages */
 
+	.auth-page-bg{
+		display: none;
+	}
+
+	.auth-sidebar-wrapper{
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+
 	.auth-sidebar-content-wrapper{
 		width: 280px;
+		height: auto;
 	}
 
 	.auth-sidebar-header-logo{
