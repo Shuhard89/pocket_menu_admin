@@ -196,12 +196,24 @@ ol{
 	line-height: 24px;
 }
 
+.reset-pwd-step2-msg{
+	display: none;
+}
+
 .auth-fields-wrapper{
 	margin: 40px 0 0 0;
 }
 
 .auth-field-wrapper{
 	margin: 0 0 15px 0;
+}
+
+.auth-user-code-reset-field{
+	display: none;
+}
+
+.auth-user-code-reset-field.visible{
+	display: block;
 }
 
 .ui.checkbox.checkbox-auth-top-margin{
@@ -298,7 +310,7 @@ a.auth-soc-login-btn__messenger{
 
 .register-place-map-wrapper{
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -323,6 +335,8 @@ a.auth-soc-login-btn__messenger{
 	position: absolute;
 	top: 60px;
 	left: 60px;
+	overflow: auto;
+	max-height: calc(100vh - 60px);
 }
 
 .map-location-card-header{

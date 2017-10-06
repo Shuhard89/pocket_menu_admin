@@ -33,6 +33,7 @@
 		width: calc(100% - 16px);
 		top: 8px;
 		left: 8px;
+		max-height: calc(100vh - 16px);
 	}
 
 	.map-location-card-header{
