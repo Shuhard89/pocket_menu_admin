@@ -474,3 +474,407 @@ a.auth-soc-login-btn__messenger{
         opacity: 0;
     }
 }
+
+
+
+
+
+/* PROFILE - PROFILE PAGE */
+
+.profile-page-wrapper{
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.profile-sidebar{
+	width: 300px;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	border-right: 1px solid rgba(34,36,38,.15);
+	box-shadow: 0 1px 2px rgba(34,36,38,.15);
+}
+
+.profile-sidebar-header{
+	display: block;
+	height: 60px;
+	padding: 20px 0;
+}
+
+.profile-sidebar-header > img{
+	display: block;
+	height: 100%;
+	width: auto;
+	margin: 0 auto;
+}
+
+.profile-sidebar-photo{
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+
+.profile-sidebar-photo > img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	user-select: none;
+}
+
+.ui.ribbon.label.profile-sidebar-photo-ribbon{
+	max-width: 200px;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	left: inherit;
+	margin: 0;
+	transform: translateX(14px);
+}
+
+.profile-sidebar-nav{
+	padding: 30px 30px 0 30px;
+	font-weight: 600;
+}
+
+.profile-sidebar-nav a{
+	color: #333;
+	transition: color .2s ease;
+}
+
+.profile-sidebar-nav a:hover{
+	color: #EC910E;
+}
+
+.profile-sidebar-nav ul > li{
+	border-bottom: 1px solid #E0E0E0;
+}
+
+.profile-sidebar-nav ul > li:last-of-type{
+	border: none;
+}
+
+.profile-sidebar-nav ul > li > a{
+	display: inline-block;
+	padding: 13px 0 13px 31px;
+	position: relative;
+}
+
+.profile-sidebar-nav ul > li > a > i{
+	display: block;
+	width: 16px;
+	line-height: 1.5;
+	position: absolute;
+	top: 13px;
+	left: 0;
+	text-align: center;
+}
+
+.profile-content-wrapper{
+	padding: 0 0 0 300px;
+}
+
+.profile-content-container-normal{
+	width: 600px;
+	max-width: 100%;
+	margin: 0 40px 0 60px;
+	padding: 0 0 60px 0;
+}
+
+.profile-content-container-heaader{
+	padding: 20px 0;
+}
+
+.profile-content-container-heaader h1{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0;
+}
+
+.ui.segment.profile-segment{
+	padding: 20px;
+	margin: 0;
+}
+
+.fields-block{
+	margin: 0 0 60px 0;
+}
+
+.profile-avatar-block{
+	width: 190px;
+	float: left;
+}
+
+.fields-heading{
+	font-weight: 600;
+	font-size: 14px;
+	margin: 0 0 15px 0;
+	position: relative;
+}
+
+.profile-avatar-container{
+	height: 127px;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+}
+
+.profile-avatar-container > img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profile-name-address-block{
+	width: calc(100% - 190px);
+	float: left;
+	padding: 0 0 0 28px;
+}
+
+.profile-address-field{
+	width: 273px;
+	float: left;
+}
+
+.ui.form .field.profile-address-field{
+	margin: 0;
+}
+
+.fields-heading-profile-address{
+	margin: 22px 0 15px 0;
+}
+
+.schedule-list{
+	font-size: 12px;
+	margin: 0 0 14px 0;
+	transition: opacity .3s ease, filter .3s ease;
+}
+
+.schedule-list > li{
+	padding: 5px 0;
+	border-radius: 4px;
+}
+
+.schedule-list > li:nth-of-type(odd){
+	background-color: #f5f5f5;
+}
+
+.schedule-day-name{
+	display: block;
+	padding: .60757143em 1em;
+	width: 190px;
+	float: left;
+	font-weight: 600;
+}
+
+.schedule-select-container{
+	width: 120px;
+	float: left;
+	margin: 0 0 0 28px;
+	font-size: 12px;
+	position: relative;
+}
+
+.schedule-from-select-container.schedule-select-disabled::after{
+	content: '';
+	display: block;
+	width: 10px;
+	height: 1px;
+	background-color: #aaa;
+	position: absolute;
+	right: 12%;
+	top: 15px;
+}
+
+.schedule-day-btns{
+	width: 38px;
+	height: 32px;
+	float: right;
+	font-size: 14px;
+	line-height: 32px;
+	color: #ec910e;
+	text-align: center;
+	position: relative;
+}
+
+.schedule-day-btn{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	transition: opacity .3s ease, transform .3s ease;
+}
+
+.schedule-day-btn.hidden{
+	opacity: 0;
+	transform: scale(0);
+	pointer-events: none;
+}
+
+.schedule-select-container.schedule-select-disabled .ui.selection.dropdown{
+	border-color: transparent;
+	pointer-events: none;
+}
+
+.schedule-select-container .ui.selection.dropdown{
+	background-color: transparent;
+}
+
+.schedule-select-container.schedule-select-disabled .dropdown.icon{
+	display: none;
+}
+
+.another-disable{
+	opacity: .5;
+	pointer-events: none;
+	filter: grayscale(1);
+	user-select: none;
+}
+
+.ui.form .field.half-width{
+	width: 266px;
+	margin: 0 26px 14px 0;
+	clear: none;
+}
+
+.ui.form .field.half-width-float{
+	float: left;
+}
+
+.ui.form .field.half-width-float:last-of-type{
+	margin: 0 0 14px 0;
+}
+
+.pay-card-checkboxes-list{
+	margin: 8px 0 0 0;
+}
+
+.pay-card-checkboxes-list.hidden{
+	display: none;
+}
+
+.pay-card-checkboxes-list > li{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 9px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	margin: 0 18px 0 0;
+}
+
+.pay-card-checkboxes-list > li label{
+	display: block;
+	opacity: .5;
+	filter: grayscale(1);
+	cursor: pointer;
+	transition: opacity .3s ease, filter .3s ease;
+}
+
+.pay-card-checkboxes-list > li label:hover{
+	opacity: .8;
+}
+
+.pay-card-checkboxes-list > li input:checked + label{
+	opacity: 1;
+	filter: grayscale(0);
+}
+
+.pay-card-checkboxes-list > li label > img{
+	display: block;
+	height: 30px;
+	width: auto;
+	margin: 0 auto 5px auto;
+}
+
+.pay-card-checkboxes-list > li label > span{
+	display: block;
+}
+
+.pay-card-checkboxes-list > li input{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.ui.label.only-icon>.icon{
+	margin: 0;
+}
+
+.ui.labeled.input:not([class*="corner labeled"]) .label:first-child+input:focus{
+	border-left-color: rgba(34,36,38,.3);
+}
+
+i.icon.popup-heading-icon{
+	color: #aaa;
+	margin: 0 0 0 5px;
+	cursor: pointer;
+	transition: color .3s ease;
+}
+
+i.icon.popup-heading-icon:hover{
+	color: #ec910e;
+}
+
+.fields-heading .ui.wide.popup{
+	min-width: 300px;
+}
+
+.fields-block-nomargin{
+	margin: 0;
+}
+
+.main-form-buttons{
+	margin: 20px 0 0 0;
+}
+
+.upload-place-avatar-btn{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	background-color: rgba(0,0,0,.7);
+	color: #fff;
+	font-size: 12px;
+	border-radius: 0 0 4px 4px;
+	transform: translateY(100%);
+	transition: transform .3s ease;
+	overflow: hidden;
+}
+
+.profile-avatar-container:hover .upload-place-avatar-btn{
+	transform: translateY(0);
+}
+
+.place-avatar-btn{
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.upload-place-avatar-btn label{
+	cursor: pointer;
+}
+
+.place-avatar-cropper-wrap{
+	width: 100%;
+	height: 500px;
+}
+
+.cr-boundary{
+	border-radius: 4px;
+}

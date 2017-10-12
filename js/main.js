@@ -6,4 +6,9 @@ $(document).ready(function() {
 	$('.ui.dropdown').dropdown();
 	$('.ui.checkbox').checkbox();
 	$('.ui.modal').modal();
+	$('.has-popup').popup({
+		hoverable: true,
+		offset: -12,
+		inline: true
+	});
 });
