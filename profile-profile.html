@@ -117,104 +117,118 @@
 									<li class="clearfix">
 										<span class="schedule-day-name">Понедельник</span>
 										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-mon-from" id="schedule-day-mon-from">
-												<option selected value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-mon-from" id="schedule-day-mon-from">
+											  <i class="dropdown icon"></i>
+											  <div class="text">09:00</div>
+											  <div class="menu">
+											    <div class="item active selected" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-mon-to" id="schedule-day-mon-to">
-												<option value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option selected value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-mon-to" id="schedule-day-mon-to">
+											  <i class="dropdown icon"></i>
+											  <div class="text">22:00</div>
+											  <div class="menu">
+											    <div class="item" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item active selected" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-day-btns">
 											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
@@ -228,104 +242,118 @@
 									<li class="clearfix">
 										<span class="schedule-day-name">Вторник</span>
 										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-tue-from" id="schedule-day-tue-from">
-												<option selected value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-tue-from" id="schedule-day-tue-from">
+											  <i class="dropdown icon"></i>
+											  <div class="text">09:00</div>
+											  <div class="menu">
+											    <div class="item active selected" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-tue-to" id="schedule-day-tue-to">
-												<option value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option selected value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-tue-to" id="schedule-day-tue-to">
+											  <i class="dropdown icon"></i>
+											  <div class="text">22:00</div>
+											  <div class="menu">
+											    <div class="item" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item active selected" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-day-btns">
 											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
@@ -339,104 +367,118 @@
 									<li class="clearfix">
 										<span class="schedule-day-name">Среда</span>
 										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-wed-from" id="schedule-day-wed-from">
-												<option selected value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-wed-from" id="schedule-day-wed-from">
+											  <i class="dropdown icon"></i>
+											  <div class="text">09:00</div>
+											  <div class="menu">
+											    <div class="item active selected" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-wed-to" id="schedule-day-wed-to">
-												<option value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option selected value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-wed-to" id="schedule-day-wed-to">
+											  <i class="dropdown icon"></i>
+											  <div class="text">22:00</div>
+											  <div class="menu">
+											    <div class="item" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item active selected" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-day-btns">
 											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
@@ -450,107 +492,121 @@
 									<li class="clearfix">
 										<span class="schedule-day-name">Четверг</span>
 										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-thu-from" id="schedule-day-thu-from">
-												<option selected value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-thu-from" id="schedule-day-thu-from">
+											  <i class="dropdown icon"></i>
+											  <div class="text">09:00</div>
+											  <div class="menu">
+											    <div class="item active selected" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-thu-to" id="schedule-day-thu-to">
-												<option value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option selected value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-thu-to" id="schedule-day-thu-to">
+											  <i class="dropdown icon"></i>
+											  <div class="text">22:00</div>
+											  <div class="menu">
+											    <div class="item" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item active selected" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-day-btns">
-											<span class="schedule-day-btn schedule-day-btn-edit"  title="Изменить">
+											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
 												<i class="pencil icon"></i>
 											</span>
 											<span class="schedule-day-btn schedule-day-btn-save hidden" title="Сохранить">
@@ -561,104 +617,118 @@
 									<li class="clearfix">
 										<span class="schedule-day-name">Пятница</span>
 										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-fri-from" id="schedule-day-fri-from">
-												<option selected value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-fri-from" id="schedule-day-fri-from">
+											  <i class="dropdown icon"></i>
+											  <div class="text">09:00</div>
+											  <div class="menu">
+											    <div class="item active selected" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-fri-to" id="schedule-day-fri-to">
-												<option value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option selected value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-fri-to" id="schedule-day-fri-to">
+											  <i class="dropdown icon"></i>
+											  <div class="text">22:00</div>
+											  <div class="menu">
+											    <div class="item" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item active selected" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-day-btns">
 											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
@@ -672,104 +742,118 @@
 									<li class="clearfix">
 										<span class="schedule-day-name">Суббота</span>
 										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-sat-from" id="schedule-day-sat-from">
-												<option selected value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-sat-from" id="schedule-day-sat-from">
+											  <i class="dropdown icon"></i>
+											  <div class="text">09:00</div>
+											  <div class="menu">
+											    <div class="item active selected" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-sat-to" id="schedule-day-sat-to">
-												<option value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option selected value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-sat-to" id="schedule-day-sat-to">
+											  <i class="dropdown icon"></i>
+											  <div class="text">22:00</div>
+											  <div class="menu">
+											    <div class="item" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item active selected" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-day-btns">
 											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
@@ -783,104 +867,118 @@
 									<li class="clearfix">
 										<span class="schedule-day-name">Воскресенье</span>
 										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-sun-from" id="schedule-day-sun-from">
-												<option selected value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-sun-from" id="schedule-day-sun-from">
+											  <i class="dropdown icon"></i>
+											  <div class="text">09:00</div>
+											  <div class="menu">
+											    <div class="item active selected" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-select-container schedule-select-disabled">
-											<select class="ui dropdown fluid" name="schedule-day-sun-to" id="schedule-day-sun-to">
-												<option value="09:00">09:00</option>
-												<option value="10:30">10:30</option>
-												<option value="11:00">11:00</option>
-												<option value="11:30">11:30</option>
-												<option value="12:00">12:00</option>
-												<option value="12:30">12:30</option>
-												<option value="13:00">13:00</option>
-												<option value="13:30">13:30</option>
-												<option value="14:00">14:00</option>
-												<option value="14:30">14:30</option>
-												<option value="15:00">15:00</option>
-												<option value="15:30">15:30</option>
-												<option value="16:00">16:00</option>
-												<option value="16:30">16:30</option>
-												<option value="17:00">17:00</option>
-												<option value="17:30">17:30</option>
-												<option value="18:00">18:00</option>
-												<option value="18:30">18:30</option>
-												<option value="19:00">19:00</option>
-												<option value="19:30">19:30</option>
-												<option value="20:00">20:00</option>
-												<option value="20:30">20:30</option>
-												<option value="21:00">21:00</option>
-												<option value="21:30">21:30</option>
-												<option selected value="22:00">22:00</option>
-												<option value="22:30">22:30</option>
-												<option value="23:00">23:00</option>
-												<option value="23:30">23:30</option>
-												<option value="00:00">00:00</option>
-												<option value="00:30">00:30</option>
-												<option value="01:00">01:00</option>
-												<option value="01:30">01:30</option>
-												<option value="02:00">02:00</option>
-												<option value="02:30">02:30</option>
-												<option value="03:00">03:00</option>
-												<option value="03:30">03:30</option>
-												<option value="04:00">04:00</option>
-												<option value="04:30">04:30</option>
-												<option value="05:00">05:00</option>
-												<option value="05:30">05:30</option>
-												<option value="06:00">06:00</option>
-												<option value="06:30">06:30</option>
-												<option value="07:00">07:00</option>
-												<option value="07:30">07:30</option>
-												<option value="08:00">08:00</option>
-												<option value="08:30">08:30</option>
-											</select>
+											<div class="ui fluid selection dropdown">
+											  <input type="hidden" name="schedule-day-sun-to" id="schedule-day-sun-to">
+											  <i class="dropdown icon"></i>
+											  <div class="text">22:00</div>
+											  <div class="menu">
+											    <div class="item" data-value="09:00">09:00</div>
+											    <div class="item" data-value="09:30">09:30</div>
+											    <div class="item" data-value="10:00">10:00</div>
+											    <div class="item" data-value="10:30">10:30</div>
+											    <div class="item" data-value="11:00">11:00</div>
+											    <div class="item" data-value="11:30">11:30</div>
+											    <div class="item" data-value="12:00">12:00</div>
+											    <div class="item" data-value="12:30">12:30</div>
+											    <div class="item" data-value="13:00">13:00</div>
+											    <div class="item" data-value="13:30">13:30</div>
+											    <div class="item" data-value="14:00">14:00</div>
+											    <div class="item" data-value="14:30">14:30</div>
+											    <div class="item" data-value="15:00">15:00</div>
+											    <div class="item" data-value="15:30">15:30</div>
+											    <div class="item" data-value="16:00">16:00</div>
+											    <div class="item" data-value="16:30">16:30</div>
+											    <div class="item" data-value="17:00">17:00</div>
+											    <div class="item" data-value="17:30">17:30</div>
+											    <div class="item" data-value="18:00">18:00</div>
+											    <div class="item" data-value="18:30">18:30</div>
+											    <div class="item" data-value="19:00">19:00</div>
+											    <div class="item" data-value="19:30">19:30</div>
+											    <div class="item" data-value="20:00">20:00</div>
+											    <div class="item" data-value="20:30">20:30</div>
+											    <div class="item" data-value="21:00">21:00</div>
+											    <div class="item" data-value="21:30">21:30</div>
+											    <div class="item active selected" data-value="22:00">22:00</div>
+											    <div class="item" data-value="22:30">22:30</div>
+											    <div class="item" data-value="23:00">23:00</div>
+											    <div class="item" data-value="23:30">23:30</div>
+											    <div class="item" data-value="00:00">00:00</div>
+											    <div class="item" data-value="00:30">00:30</div>
+											    <div class="item" data-value="01:00">01:00</div>
+											    <div class="item" data-value="01:30">01:30</div>
+											    <div class="item" data-value="02:00">02:00</div>
+											    <div class="item" data-value="02:30">02:30</div>
+											    <div class="item" data-value="03:00">03:00</div>
+											    <div class="item" data-value="03:30">03:30</div>
+											    <div class="item" data-value="04:00">04:00</div>
+											    <div class="item" data-value="04:30">04:30</div>
+											    <div class="item" data-value="05:00">05:00</div>
+											    <div class="item" data-value="05:30">05:30</div>
+											    <div class="item" data-value="06:00">06:00</div>
+											    <div class="item" data-value="06:30">06:30</div>
+											    <div class="item" data-value="07:00">07:00</div>
+											    <div class="item" data-value="07:30">07:30</div>
+											    <div class="item" data-value="08:00">08:00</div>
+											    <div class="item" data-value="08:30">08:30</div>
+											  </div>
+											</div>
 										</div>
 										<div class="schedule-day-btns">
 											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">

@@ -720,12 +720,9 @@ a.auth-soc-login-btn__messenger{
 }
 
 .schedule-select-container.schedule-select-disabled .ui.selection.dropdown{
+	background-color: transparent;
 	border-color: transparent;
 	pointer-events: none;
-}
-
-.schedule-select-container .ui.selection.dropdown{
-	background-color: transparent;
 }
 
 .schedule-select-container.schedule-select-disabled .dropdown.icon{
