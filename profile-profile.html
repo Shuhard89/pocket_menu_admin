@@ -1122,6 +1122,10 @@
 	  	</div>
 	  </div>
 	  <div class="actions center">
+		<div class="ui red basic cancel inverted button cancel-place-avatar-btn">
+          <i class="remove icon"></i>
+          Отменить
+      	</div>
 	    <div class="ui green ok inverted button save-place-avatar-btn">
 	      <i class="checkmark icon"></i>
 	      Сохранить
@@ -1212,7 +1216,7 @@
 
 				$('#place-avatar-upload').on('change', function () {
 					readFile(this);
-					$('#cropper-modal').modal('show');
+					$('#cropper-modal').modal('setting', 'closable', false).modal('show');
 				});
 				$('.save-place-avatar-btn').on('click', function (ev) {
 					$uploadCrop.croppie('result', {
@@ -1223,6 +1227,10 @@
 						$('.profile-avatar-container > img').remove();
 						$('.profile-avatar-container').append('<img src="' + resp + '"></img>');
 					});
+				});
+				$('.cancel-place-avatar-btn').on('click', function(ev) {
+					$('#place-avatar-upload').val('');
+					destroy();
 				});
 			}
 
