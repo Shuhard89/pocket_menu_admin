@@ -545,7 +545,8 @@ a.auth-soc-login-btn__messenger{
 	transition: color .2s ease;
 }
 
-.profile-sidebar-nav a:hover{
+.profile-sidebar-nav a:hover,
+.profile-sidebar-nav ul > li.active a{
 	color: #EC910E;
 }
 
