@@ -75,1067 +75,118 @@
 						<h1>Настройки</h1>
 					</div>
 					<div class="ui segment profile-segment">
-						<form action="#" method="POST" id="profile-form" class="ui form">
-							<div class="fields-block clearfix">
-								<div class="profile-avatar-block">
-									<h2 class="fields-heading">Фото заведения <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-									<div class="profile-avatar-container" id="place-crop">
-										<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Avatar">
-										<div class="upload-place-avatar-btn">
-											<input type="file" name="place-avatar" id="place-avatar-upload" accept="image/*" class="place-avatar-btn">
-											<label for="place-avatar-upload">
-												<div class="place-avatar-upload-text">
-													<i class="pencil icon"></i> Загрузить фото
-												</div>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="profile-name-address-block">
-									<h2 class="fields-heading">Название заведения <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-									<div class="field">
-										<div class="ui input fluid">
-											<input type="text" placeholder="Введите название" name="place-name" id="place-name">
-										</div>
-									</div>
-									<h2 class="fields-heading fields-heading-profile-address">Адрес заведения <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-									<div class="profile-address-map-container clearfix">
-										<div class="field profile-address-field">
-											<div class="ui input fluid">
-												<input type="text" placeholder="Введите адрес" name="place-address" id="place-address">
-											</div>
-										</div>
-										<a href="profile-map.html" class="ui icon button orange right floated" title="Открыть карту">
-											<i class="map icon"></i>
-										</a>
-									</div>
-								</div>
-							</div>
+						<form action="#" method="POST" id="settings-form" class="ui form">
 							<div class="fields-block">
-								<h2 class="fields-heading">График работы <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-								<ul class="schedule-list">
-									<li class="clearfix">
-										<span class="schedule-day-name">Понедельник</span>
-										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-mon-from" id="schedule-day-mon-from">
-											  <i class="dropdown icon"></i>
-											  <div class="text">09:00</div>
-											  <div class="menu">
-											    <div class="item active selected" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-mon-to" id="schedule-day-mon-to">
-											  <i class="dropdown icon"></i>
-											  <div class="text">22:00</div>
-											  <div class="menu">
-											    <div class="item" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item active selected" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-day-btns">
-											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
-												<i class="pencil icon"></i>
-											</span>
-											<span class="schedule-day-btn schedule-day-btn-save hidden" title="Сохранить">
-												<i class="save icon"></i>
-											</span>
-										</div>
+								<h2 class="fields-heading">Мобильный для входа <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
+								<ul class="profile-settings-phones-list">
+									<li>
+										<i class="mobile icon"></i>
+										<span>+380938633388</span>
+										<i class="remove link orange icon"></i>
 									</li>
-									<li class="clearfix">
-										<span class="schedule-day-name">Вторник</span>
-										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-tue-from" id="schedule-day-tue-from">
-											  <i class="dropdown icon"></i>
-											  <div class="text">09:00</div>
-											  <div class="menu">
-											    <div class="item active selected" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-tue-to" id="schedule-day-tue-to">
-											  <i class="dropdown icon"></i>
-											  <div class="text">22:00</div>
-											  <div class="menu">
-											    <div class="item" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item active selected" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-day-btns">
-											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
-												<i class="pencil icon"></i>
-											</span>
-											<span class="schedule-day-btn schedule-day-btn-save hidden" title="Сохранить">
-												<i class="save icon"></i>
-											</span>
-										</div>
-									</li>
-									<li class="clearfix">
-										<span class="schedule-day-name">Среда</span>
-										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-wed-from" id="schedule-day-wed-from">
-											  <i class="dropdown icon"></i>
-											  <div class="text">09:00</div>
-											  <div class="menu">
-											    <div class="item active selected" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-wed-to" id="schedule-day-wed-to">
-											  <i class="dropdown icon"></i>
-											  <div class="text">22:00</div>
-											  <div class="menu">
-											    <div class="item" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item active selected" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-day-btns">
-											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
-												<i class="pencil icon"></i>
-											</span>
-											<span class="schedule-day-btn schedule-day-btn-save hidden" title="Сохранить">
-												<i class="save icon"></i>
-											</span>
-										</div>
-									</li>
-									<li class="clearfix">
-										<span class="schedule-day-name">Четверг</span>
-										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-thu-from" id="schedule-day-thu-from">
-											  <i class="dropdown icon"></i>
-											  <div class="text">09:00</div>
-											  <div class="menu">
-											    <div class="item active selected" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-thu-to" id="schedule-day-thu-to">
-											  <i class="dropdown icon"></i>
-											  <div class="text">22:00</div>
-											  <div class="menu">
-											    <div class="item" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item active selected" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-day-btns">
-											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
-												<i class="pencil icon"></i>
-											</span>
-											<span class="schedule-day-btn schedule-day-btn-save hidden" title="Сохранить">
-												<i class="save icon"></i>
-											</span>
-										</div>
-									</li>
-									<li class="clearfix">
-										<span class="schedule-day-name">Пятница</span>
-										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-fri-from" id="schedule-day-fri-from">
-											  <i class="dropdown icon"></i>
-											  <div class="text">09:00</div>
-											  <div class="menu">
-											    <div class="item active selected" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-fri-to" id="schedule-day-fri-to">
-											  <i class="dropdown icon"></i>
-											  <div class="text">22:00</div>
-											  <div class="menu">
-											    <div class="item" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item active selected" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-day-btns">
-											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
-												<i class="pencil icon"></i>
-											</span>
-											<span class="schedule-day-btn schedule-day-btn-save hidden" title="Сохранить">
-												<i class="save icon"></i>
-											</span>
-										</div>
-									</li>
-									<li class="clearfix">
-										<span class="schedule-day-name">Суббота</span>
-										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-sat-from" id="schedule-day-sat-from">
-											  <i class="dropdown icon"></i>
-											  <div class="text">09:00</div>
-											  <div class="menu">
-											    <div class="item active selected" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-sat-to" id="schedule-day-sat-to">
-											  <i class="dropdown icon"></i>
-											  <div class="text">22:00</div>
-											  <div class="menu">
-											    <div class="item" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item active selected" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-day-btns">
-											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
-												<i class="pencil icon"></i>
-											</span>
-											<span class="schedule-day-btn schedule-day-btn-save hidden" title="Сохранить">
-												<i class="save icon"></i>
-											</span>
-										</div>
-									</li>
-									<li class="clearfix">
-										<span class="schedule-day-name">Воскресенье</span>
-										<div class="schedule-select-container schedule-from-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-sun-from" id="schedule-day-sun-from">
-											  <i class="dropdown icon"></i>
-											  <div class="text">09:00</div>
-											  <div class="menu">
-											    <div class="item active selected" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-select-container schedule-select-disabled">
-											<div class="ui fluid selection dropdown">
-											  <input type="hidden" name="schedule-day-sun-to" id="schedule-day-sun-to">
-											  <i class="dropdown icon"></i>
-											  <div class="text">22:00</div>
-											  <div class="menu">
-											    <div class="item" data-value="09:00">09:00</div>
-											    <div class="item" data-value="09:30">09:30</div>
-											    <div class="item" data-value="10:00">10:00</div>
-											    <div class="item" data-value="10:30">10:30</div>
-											    <div class="item" data-value="11:00">11:00</div>
-											    <div class="item" data-value="11:30">11:30</div>
-											    <div class="item" data-value="12:00">12:00</div>
-											    <div class="item" data-value="12:30">12:30</div>
-											    <div class="item" data-value="13:00">13:00</div>
-											    <div class="item" data-value="13:30">13:30</div>
-											    <div class="item" data-value="14:00">14:00</div>
-											    <div class="item" data-value="14:30">14:30</div>
-											    <div class="item" data-value="15:00">15:00</div>
-											    <div class="item" data-value="15:30">15:30</div>
-											    <div class="item" data-value="16:00">16:00</div>
-											    <div class="item" data-value="16:30">16:30</div>
-											    <div class="item" data-value="17:00">17:00</div>
-											    <div class="item" data-value="17:30">17:30</div>
-											    <div class="item" data-value="18:00">18:00</div>
-											    <div class="item" data-value="18:30">18:30</div>
-											    <div class="item" data-value="19:00">19:00</div>
-											    <div class="item" data-value="19:30">19:30</div>
-											    <div class="item" data-value="20:00">20:00</div>
-											    <div class="item" data-value="20:30">20:30</div>
-											    <div class="item" data-value="21:00">21:00</div>
-											    <div class="item" data-value="21:30">21:30</div>
-											    <div class="item active selected" data-value="22:00">22:00</div>
-											    <div class="item" data-value="22:30">22:30</div>
-											    <div class="item" data-value="23:00">23:00</div>
-											    <div class="item" data-value="23:30">23:30</div>
-											    <div class="item" data-value="00:00">00:00</div>
-											    <div class="item" data-value="00:30">00:30</div>
-											    <div class="item" data-value="01:00">01:00</div>
-											    <div class="item" data-value="01:30">01:30</div>
-											    <div class="item" data-value="02:00">02:00</div>
-											    <div class="item" data-value="02:30">02:30</div>
-											    <div class="item" data-value="03:00">03:00</div>
-											    <div class="item" data-value="03:30">03:30</div>
-											    <div class="item" data-value="04:00">04:00</div>
-											    <div class="item" data-value="04:30">04:30</div>
-											    <div class="item" data-value="05:00">05:00</div>
-											    <div class="item" data-value="05:30">05:30</div>
-											    <div class="item" data-value="06:00">06:00</div>
-											    <div class="item" data-value="06:30">06:30</div>
-											    <div class="item" data-value="07:00">07:00</div>
-											    <div class="item" data-value="07:30">07:30</div>
-											    <div class="item" data-value="08:00">08:00</div>
-											    <div class="item" data-value="08:30">08:30</div>
-											  </div>
-											</div>
-										</div>
-										<div class="schedule-day-btns">
-											<span class="schedule-day-btn schedule-day-btn-edit" title="Изменить">
-												<i class="pencil icon"></i>
-											</span>
-											<span class="schedule-day-btn schedule-day-btn-save hidden" title="Сохранить">
-												<i class="save icon"></i>
-											</span>
-										</div>
+									<li>
+										<i class="mobile icon"></i>
+										<span>+380938633388</span>
+										<i class="remove link orange icon"></i>
 									</li>
 								</ul>
-								<div class="ui checkbox schedule-allday-checkbox">
-									<input type="checkbox" name="schedule-allday" id="schedule-allday">
-									<label>Круглосуточно</label>
-								</div>
-							</div>
-							<div class="fields-block">
-								<h2 class="fields-heading">Телефоны <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-								<div class="profile-phones-wrapper field">
-									<div class="field half-width profile-tel-field">
-										<div class="ui icon input fluid">
-											<input type="text" placeholder="Введите номер" name="place-tel" value="+380937778899">
-											<i class="remove link icon orange" title="Удалить"></i>
-										</div>
-									</div>
-									<div class="field half-width profile-tel-field">
-										<div class="ui icon input fluid">
-											<input type="text" placeholder="Введите номер" name="place-tel-2">
-											<i class="remove link icon orange" title="Удалить"></i>
-										</div>
-									</div>
-								</div>
-								<span class="ui labeled icon button orange add-profile-phone-btn">
+								<span class="ui labeled icon button orange" id="settings-add-tel-open-modal-btn">
 									<i class="plus icon"></i>
 									Добавить номер
 								</span>
 							</div>
 							<div class="fields-block">
- 								<h2 class="fields-heading">Сервисы <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>		
- 								<div class="field">		
- 									<div class="ui fluid multiple search selection dropdown allow-add-dd">		
- 										<input name="services" type="hidden">		
- 										<i class="dropdown icon"></i>		
- 										<div class="default text">Выберите сервисы</div>		
- 										<div class="menu">		
- 											<div class="item" data-value="wifi">wi-fi</div>		
- 											<div class="item" data-value="shipping">Доставка</div>		
- 										</div>		
- 									</div>		
- 								</div>		
- 							</div>
-							<div class="fields-block">
-								<h2 class="fields-heading">Оплата <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-								<div class="clearfix">
-									<div class="field half-width half-width-float">
-										<div class="ui checkbox pay-card-checkbox">
-											<input type="checkbox" name="pay-card" id="pay-card">
-											<label>Безналичный расчет</label>
-										</div>
-									</div>
-									<div class="field half-width half-width-float">
-										<div class="ui checkbox">
-											<input type="checkbox" name="pay-cash" id="pay-cash">
-											<label>Наличный расчет</label>
-										</div>
-									</div>
-								</div>
-								<ul class="pay-card-checkboxes-list hidden">
+								<h2 class="fields-heading">Facebook аккаунт <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
+								<ul class="profile-settings-fb-list">
 									<li>
-										<input type="checkbox" name="pay-visa" id="pay-visa">
-										<label for="pay-visa">
-											<img src="assets/icons/visa.svg" alt="Visa">
-											<span>Visa</span>
-										</label>
+										<img src="assets/placeholder_content/fb1.png" alt="Serega Kavun">
+										<span>Serega Kavun</span>
+										<i class="remove link orange icon"></i>
 									</li>
 									<li>
-										<input type="checkbox" name="pay-mastercard" id="pay-mastercard">
-										<label for="pay-mastercard">
-											<img src="assets/icons/mastercard.svg" alt="MasterCard">
-											<span>MasterCard</span>
-										</label>
+										<img src="assets/placeholder_content/fb2.png" alt="Жека Дзецина">
+										<span>Жека Дзецина</span>
+										<i class="remove link orange icon"></i>
 									</li>
 								</ul>
-							</div>
-							<div class="fields-block">
-								<h2 class="fields-heading">Социальные сети <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-								<div class="field soc-links-wrapper">
-									<div class="field">
-										<div class="ui icon input fluid labeled">
-											<div class="ui label only-icon">
-												<i class="facebook icon"></i>
-											</div>
-											<input type="text" placeholder="Вставьте ссылку" name="place-soc-link" value="https://facebook.com/myprofile/">
-											<i class="remove link icon orange" title="Удалить"></i>
-										</div>
-									</div>
-									<div class="field">
-										<div class="ui icon input fluid labeled">
-											<div class="ui label only-icon">
-												<i class="instagram icon"></i>
-											</div>
-											<input type="text" placeholder="Вставьте ссылку" name="place-soc-link" value="https://instagram.com/myprofile/">
-											<i class="remove link icon orange" title="Удалить"></i>
-										</div>
-									</div>
-									<div class="field">
-										<div class="ui icon input fluid labeled">
-											<div class="ui label only-icon">
-												<i class="linkify icon"></i>
-											</div>
-											<input type="text" placeholder="Вставьте ссылку" name="place-soc-link">
-											<i class="remove link icon orange" title="Удалить"></i>
-										</div>
-									</div>
-								</div>
-								<span class="ui labeled icon button orange add-soc-link-btn">
+								<span class="ui labeled icon button orange" onclick="$('#add-acc-fb-modal').modal('show');">
 									<i class="plus icon"></i>
-									Добавить ссылку
+									Добавить аккаунт
 								</span>
 							</div>
 							<div class="fields-block">
-								<h2 class="fields-heading">Ваш сайт <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-								<div class="field">
-									<div class="ui icon input fluid labeled">
-										<div class="ui label only-icon">
-											<i class="world icon"></i>
+								<div class="clearfix">
+									<div class="field half-width half-width-float">
+										<h2 class="fields-heading">Язык сервиса <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
+										<div class="ui selection dropdown">
+											<input type="hidden" name="service-name">
+											<i class="dropdown icon"></i>
+											<div class="text">Русский</div>
+											<div class="menu">
+												<div class="item selected active" data-value="ru">Русский</div>
+												<div class="item" data-value="uk">Украинский</div>
+												<div class="item" data-value="en">Английский</div>
+											</div>
 										</div>
-										<input type="text" placeholder="Вставьте ссылку" name="place-website-link" value="http://website.com">
+									</div>
+									<div class="field half-width half-width-float">
+										<h2 class="fields-heading">Язык меню <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
+										<div class="ui selection dropdown">
+											<input type="hidden" name="menu-name">
+											<i class="dropdown icon"></i>
+											<div class="text">Русский</div>
+											<div class="menu">
+												<div class="item selected active" data-value="ru">Русский</div>
+												<div class="item" data-value="uk">Украинский</div>
+												<div class="item" data-value="en">Английский</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-								<div class="fields-block">		
-								<h2 class="fields-heading">Тип заведения <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>		
- 								<div class="field">		
- 									<div class="ui fluid multiple search selection dropdown allow-add-dd">		
- 										<input name="place-type" type="hidden">		
- 										<i class="dropdown icon"></i>		
- 										<div class="default text">Выберите тип заведения</div>		
- 										<div class="menu">		
- 											<div class="item" data-value="bar">Бар</div>		
- 											<div class="item" data-value="restaurant">Ресторан</div>		
- 										</div>		
- 									</div>		
- 								</div>		
- 							</div>
-							<div class="fields-block fields-block-nomargin">
-								<h2 class="fields-heading">Описание заведения <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-								<div class="field">
-									<div class="ui icon textarea fluid">
-										<textarea placeholder="Введите описание заведения" name="place-description"></textarea>
+							<div class="fields-block">
+								<h2 class="fields-heading">Изменить пароль <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
+								<div class="profile-phones-wrapper field">
+									<div class="field half-width profile-tel-field">
+										<div class="ui icon input fluid">
+											<input type="password" placeholder="Введите старый пароль" name="current-password">
+										</div>
+									</div>
+									<div class="field half-width profile-tel-field">
+										<div class="ui icon input fluid">
+											<input type="password" placeholder="Введите новый пароль" name="new-password">
+										</div>
+									</div>
+									<div class="field half-width profile-tel-field">
+										<div class="ui icon input fluid">
+											<input type="password" placeholder="Повторите новый пароль" name="new-password-repeat">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="remove-acc-block">
+								<h2 class="fields-heading fields-heading-remove-acc">Удаление аккаунта <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
+								<span class="ui button red" onclick="$('#remove-acc-msg').modal('show');">
+									Удалить аккаунт
+								</span>
+								<div class="ui modal tiny" id="remove-acc-msg">
+									<div class="header">Предупреждение</div>
+									<div class="content">
+										<p>
+											<b>Вы действительно хотите удалить свой аккаунт?</b>
+										</p>
+										<p>В течении 90 дней Ваш аккаунт возможно будет восстановить без каких-либо потерь. В этом состоянии Ваш профиль не будет доступен другим пользователям. Однако, по истечению 90 дней профиль будет удален безвозвратно.</p>
+									</div>
+									<div class="actions">
+										<div class="ui cancel button basic red">Отменить</div>
+										<div class="ui approve button red">Удалить</div>
 									</div>
 								</div>
 							</div>
 						</form>
 					</div>
 					<div class="main-form-buttons">
-						<button type="submit" class="ui button orange" form="profile-form">
+						<button type="submit" class="ui button orange" form="settings-form">
 							Сохранить изменения
 						</button>
 					</div>
@@ -1143,22 +194,37 @@
 			</div>
 		</div>
 	</div>
-	<div class="ui basic modal small" id="cropper-modal">
-	  <div class="content">
-	  	<div class="place-avatar-cropper-wrap">
-			<div id="upload-demo" class="croppie-container"></div>
-	  	</div>
-	  </div>
-	  <div class="actions center">
-		<div class="ui red basic cancel inverted button cancel-place-avatar-btn">
-          <i class="remove icon"></i>
-          Отменить
-      	</div>
-	    <div class="ui green ok inverted button save-place-avatar-btn">
-	      <i class="checkmark icon"></i>
-	      Сохранить
-	    </div>
-	  </div>
+	<div class="ui modal mini" id="add-acc-tel-modal">
+		<div class="header">Привязка номера</div>
+		<div class="content form-modal-content">
+			<form action="#" method="POST" id="account-tel-form" class="ui form">
+				<p class="add-tel-step1-msg">Шаг 1: Введите номер телефона</p>
+				<p class="add-tel-step2-msg hidden">Шаг 2: Введите полученный код</p>
+				<div class="field">
+					<div class="ui input fluid settings-tel-input">
+						<input type="tel" placeholder="Введите номер телефона" name="user-tel" id="user-tel">
+					</div>
+				</div>
+				<div class="field settings-code-add-tel-field hidden">
+					<div class="ui input fluid settings-code-input">
+						<input type="number" placeholder="Введите код" name="user-code" id="user-code">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="actions">
+			<div class="ui cancel button basic orange">Отмена</div>
+			<button type="submit" class="ui button orange" form="account-tel-form">Добавить номер</button>
+		</div>
+	</div>
+	<div class="ui modal mini" id="add-acc-fb-modal">
+		<div class="header">Добавить аккаунт Facebook</div>
+		<div class="content form-modal-content">
+			<span class="auth-soc-login-btn auth-soc-login-btn__facebook">Facebook</span>
+		</div>
+		<div class="actions">
+			<div class="ui cancel button basic orange">Отмена</div>
+		</div>
 	</div>
 	<script src="js/libs/ofi.min.js"></script>
 	<script src="js/libs/jquery-3.2.1.min.js"></script>
@@ -1166,113 +232,140 @@
 	<script src="js/libs/croppie.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
-		$(function() {
-			// Schedule edit
-			$('.schedule-day-btn-edit').click(function() {
-				var $thisRow = $(this).closest('li'),
-					$dropdowns = $thisRow.find('.schedule-select-container');
+		$('#account-tel-form')
+		  .form({
+		    inline : true,
+		    fields: {
+		      usertel: {
+		        identifier  : 'user-tel',
+		        rules: [
+		          {
+		            type   : 'empty',
+		            prompt : 'Введите номер в формате +380XXXXXXXXX'
+		          },
+		          {
+		            type   : 'regExp[/[0-9]{11}/i]',
+		            prompt : 'Введите номер в формате +380XXXXXXXXX'
+		          }
+		        ]
+		      },
+		      usercode: {
+		        identifier  : 'user-code',
+		        optional	: true,
+		        depends    : 'user-tel',
+		        rules: [
+		          {
+		            type   : 'empty',
+		            prompt : 'Введите код'
+		          },
+		          {
+		            type   : 'number',
+		            prompt : 'Неверный формат'
+		          }
+		        ]
+		      }
+		    }
+		  })
+		;
+		$('#account-tel-form').on('submit', function(event) {
+			var $userTelInput = $('#user-tel'),
+				$userCodeField = $('.settings-code-add-tel-field'),
+				$formMsgStep1 = $('.add-tel-step1-msg'),
+				$formMsgStep2 = $('.add-tel-step2-msg');
 
-				$dropdowns.removeClass('schedule-select-disabled');
-				$(this).addClass('hidden').siblings('.schedule-day-btn').removeClass('hidden');
-			});
-
-			// Schedule save
-			$('.schedule-day-btn-save').click(function() {
-				var $thisRow = $(this).closest('li'),
-					$dropdowns = $thisRow.find('.schedule-select-container');
-
-				$dropdowns.addClass('schedule-select-disabled');
-				$(this).addClass('hidden').siblings('.schedule-day-btn').removeClass('hidden');
-			});
-
-			// Schedule disable
-			$('.schedule-allday-checkbox input').change(function() {
-				if ( $(this).is(':checked') ){
-					$('.schedule-list').addClass('another-disable');
-					$('.schedule-select-container').addClass('schedule-select-disabled');
-					$('.schedule-day-btn-save').addClass('hidden');
-					$('.schedule-day-btn-edit').removeClass('hidden');
-				} else {
-					$('.schedule-list').removeClass('another-disable');
-				}
-			});
-
-			// Pay card checkbox
-			$('.pay-card-checkbox input').change(function() {
-				if ( $(this).is(':checked') ){
-					$('.pay-card-checkboxes-list').removeClass('hidden');
-				} else {
-					$('.pay-card-checkboxes-list').addClass('hidden');
-					$('.pay-card-checkboxes-list input').each(function(index, el) {
-						$(this).prop('checked', false);
-					});
-				}
-			});
-
-			// Avatar cropping
-			function avatarUpload() {
-				var $uploadCrop;
-
-				function readFile(input) {
-		 			if (input.files && input.files[0]) {
-			            var reader = new FileReader();
-			            
-			            reader.onload = function (e) {
-							$('.upload-demo').addClass('ready');
-			            	$uploadCrop.croppie('bind', {
-			            		url: e.target.result
-			            	}).then(function(){
-			            		console.log('jQuery bind complete');
-			            	});
-			            	
-			            }
-			            
-			            reader.readAsDataURL(input.files[0]);
-			        }
-			        else {
-				        swal("Sorry - you're browser doesn't support the FileReader API");
-				    }
-				}
-
-				$uploadCrop = $('#upload-demo').croppie({
-					viewport: {
-						width: 300,
-						height: 200
-					},
-					enableExif: true
-				});
-
-				$('#place-avatar-upload').on('change', function () {
-					readFile(this);
-					$('#cropper-modal').modal('setting', 'closable', false).modal('show');
-				});
-				$('.save-place-avatar-btn').on('click', function (ev) {
-					$uploadCrop.croppie('result', {
-						type: 'base64',
-						size: 'viewport'
-					}).then(function (resp) {
-						$('#place-avatar-upload').val('');
-						$('.profile-avatar-container > img').remove();
-						$('.profile-avatar-container').append('<img src="' + resp + '"></img>');
-					});
-				});
-				$('.cancel-place-avatar-btn').on('click', function(ev) {
-					$('#place-avatar-upload').val('');
-					destroy();
-				});
-			}
-
-			avatarUpload();
-
-			// Dropdowns allow additions
-			$('.ui.dropdown.allow-add-dd').dropdown({
-				allowAdditions: true
-			});
-
-			// Prevent form
-			$('#profile-form').on('submit', function(event) {
+			if ( !$userTelInput.parents('.field').hasClass('error') && $userCodeField.hasClass('hidden') ){
 				event.preventDefault();
-			});
+
+				$('#account-tel-form')
+				  .form({
+				    inline : true,
+				    fields: {
+				      usertel: {
+				        identifier  : 'user-tel',
+				        rules: [
+				          {
+				            type   : 'empty',
+				            prompt : 'Введите номер телефона'
+				          },
+				          {
+				            type   : 'regExp[/[0-9]{11}/i]',
+				            prompt : 'Введите номер в формате +380XXXXXXXXX'
+				          }
+				        ]
+				      },
+				      usercode: {
+				        identifier  : 'user-code',
+				        optional	: false,
+				        depends    : 'user-tel',
+				        rules: [
+				          {
+				            type   : 'empty',
+				            prompt : 'Введите код'
+				          },
+				          {
+				            type   : 'number',
+				            prompt : 'Неверный формат'
+				          }
+				        ]
+				      }
+				    }
+				  })
+				;
+
+				$formMsgStep1.addClass('hidden');
+				$formMsgStep2.removeClass('hidden');
+				$userTelInput.parent('.input').addClass('disabled');
+				$userCodeField.removeClass('hidden');
+			}
+		});
+
+		$('#settings-add-tel-open-modal-btn').on('click', function() {
+			$('#add-acc-tel-modal').modal({
+				closable  : false,
+				onHidden : function() {
+					$('.add-tel-step1-msg').removeClass('hidden');
+					$('.add-tel-step2-msg').addClass('hidden');
+					$('.settings-tel-input').removeClass('disabled');
+					$('.settings-code-add-tel-field').addClass('hidden');
+					$('#user-tel, #user-code').val('');
+
+					$('#account-tel-form')
+					  .form({
+					    inline : true,
+					    fields: {
+					      usertel: {
+					        identifier  : 'user-tel',
+					        rules: [
+					          {
+					            type   : 'empty',
+					            prompt : 'Введите номер в формате +380XXXXXXXXX'
+					          },
+					          {
+					            type   : 'regExp[/[0-9]{11}/i]',
+					            prompt : 'Введите номер в формате +380XXXXXXXXX'
+					          }
+					        ]
+					      },
+					      usercode: {
+					        identifier  : 'user-code',
+					        optional	: true,
+					        depends    : 'user-tel',
+					        rules: [
+					          {
+					            type   : 'empty',
+					            prompt : 'Введите код'
+					          },
+					          {
+					            type   : 'number',
+					            prompt : 'Неверный формат'
+					          }
+					        ]
+					      }
+					    }
+					  })
+					;
+				}
+			}).modal('show');
 		});
 	</script>
 </body>
