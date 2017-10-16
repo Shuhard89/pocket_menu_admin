@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin Panel - Menu category</title>
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="fonts/icon.css">
+	<link rel="stylesheet" href="css/semantic.min.css">
+	<link rel="stylesheet" href="css/croppie.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mediaq.css">
+</head>
+<body>
+	<div id="app">
+		<div class="profile-page-wrapper">
+			<div class="profile-sidebar">
+				<a href="profile-profile.html" class="profile-sidebar-header">
+					<img src="assets/logo.svg" alt="Pocket Menu">
+				</a>
+				<div class="profile-sidebar-photo">
+					<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto">
+					<span class="ui orange right ribbon label profile-sidebar-photo-ribbon">Faro del porto</span>
+				</div>
+				<nav class="profile-sidebar-nav">
+					<ul>
+						<li>
+							<a href="profile-profile.html">
+								<i class="id card outline icon"></i>
+								<span>Профиль</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="profile-menu.html">
+								<i class="food icon"></i>
+								<span>Меню</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="newspaper icon"></i>
+								<span>Новости</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="building outline icon"></i>
+								<span>План заведения</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="pie chart icon"></i>
+								<span>Аналитика</span>
+							</a>
+						</li>
+						<li>
+							<a href="profile-settings.html">
+								<i class="settings icon"></i>
+								<span>Настройки</span>
+							</a>
+						</li>
+						<li>
+							<a href="index.html">
+								<i class="sign out icon"></i>
+								<span>Выйти</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="profile-content-wrapper">
+				<div class="profile-content-container-wide">
+					<div class="profile-content-container-heaader">
+						<h1>Меню</h1>
+					</div>
+					<div class="ui segment profile-segment menu-segment">
+						<form action="#" method="POST" id="menu-search-form" class="ui form">
+							<div class="ui icon input fluid">
+								<input type="text" placeholder="Поиск...">
+								<i class="search icon link"></i>
+							</div>
+						</form>
+					</div>
+					<div class="ui segment profile-segment menu-segment">
+						<span class="ui orange ribbon label menu-segment-label">Первые блюда</span>
+						<a href="profile-add-menu-item.html" class="ui labeled icon button orange add-category-btn mini">
+							<i class="plus icon"></i>
+							Добавить блюдо
+						</a>
+						<ul class="menu-category-food-items-list">
+							<li class="clearfix">
+								<a href="#" class="menu-category-food-item-preview">
+									<img src="assets/placeholder_content/soup_placeholder.png" alt="title">
+								</a>
+								<div class="menu-category-food-item-preview-info">
+									<h2>
+										<a href="#">Борщ с ребрышками</a>
+									</h2>
+									<span class="menu-category-food-item-weight">Вес порции: 300/30 г</span>
+									<div class="menu-category-food-item-description">
+										<p>Описание отсутствует</p>
+									</div>
+									<div class="menu-category-food-item-labels">
+										<div class="ui label">45 грн</div>
+									</div>
+								</div>
+								<div class="menu-food-item-preview-btns">
+									<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+										<i class="icon pencil"></i>
+									</a>
+									<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+										<i class="icon remove"></i>
+									</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<a href="#" class="menu-category-food-item-preview">
+									<img src="assets/placeholder_content/denaro.png" alt="title">
+								</a>
+								<div class="menu-category-food-item-preview-info">
+									<h2>
+										<a href="#">Денаро</a>
+									</h2>
+									<span class="menu-category-food-item-weight">Вес порции: 250 г</span>
+									<div class="menu-category-food-item-description">
+										<p>Томатный суп с морепродуктами</p>
+									</div>
+									<div class="menu-category-food-item-labels">
+										<div class="ui label">67 грн</div>
+									</div>
+								</div>
+								<div class="menu-food-item-preview-btns">
+									<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+										<i class="icon pencil"></i>
+									</a>
+									<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+										<i class="icon remove"></i>
+									</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<a href="#" class="menu-category-food-item-preview">
+									<img src="assets/placeholder_content/corn_chadder.png" alt="title">
+								</a>
+								<div class="menu-category-food-item-preview-info">
+									<h2>
+										<a href="#">Корн чаудер</a>
+									</h2>
+									<span class="menu-category-food-item-weight">Вес порции: 250 г</span>
+									<div class="menu-category-food-item-description">
+										<p>Почувствуй контраст нежного крем-супа, хрустящего бекона и душистых крутонов</p>
+									</div>
+									<div class="menu-category-food-item-labels">
+										<div class="ui label">52 грн</div>
+									</div>
+								</div>
+								<div class="menu-food-item-preview-btns">
+									<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+										<i class="icon pencil"></i>
+									</a>
+									<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+										<i class="icon remove"></i>
+									</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<a href="#" class="menu-category-food-item-preview">
+									<img src="assets/placeholder_content/tan.png" alt="title">
+								</a>
+								<div class="menu-category-food-item-preview-info">
+									<h2>
+										<a href="#">Тан</a>
+									</h2>
+									<span class="menu-category-food-item-weight">Вес порции: 250 г</span>
+									<div class="menu-category-food-item-description">
+										<p>Крутое сочетание остроты бульона, грибного вкуса и легкости скрамбла</p>
+									</div>
+									<div class="menu-category-food-item-labels">
+										<div class="ui label">35 грн</div>
+									</div>
+								</div>
+								<div class="menu-food-item-preview-btns">
+									<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+										<i class="icon pencil"></i>
+									</a>
+									<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+										<i class="icon remove"></i>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ui modal tiny" id="remove-food-item-msg">
+		<div class="header">Предупреждение</div>
+		<div class="content">
+			<p>
+				<b>Вы действительно хотите удалить это блюдо?</b>
+			</p>
+			<p>Данное действие невозможно будет вернуть.</p>
+		</div>
+		<div class="actions">
+			<div class="ui cancel button basic red">Отменить</div>
+			<div class="ui approve button red">Удалить</div>
+		</div>
+	</div>
+	<script src="js/libs/ofi.min.js"></script>
+	<script src="js/libs/jquery-3.2.1.min.js"></script>
+	<script src="js/libs/semantic.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
