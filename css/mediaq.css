@@ -1,3 +1,18 @@
+@media all and ( max-height: 620px ){
+	.profile-sidebar{
+		overflow: auto;
+	}
+
+	.ui.ribbon.label.profile-sidebar-photo-ribbon{
+		transform: none;
+		padding-right: 1.2em;
+	}
+
+	.ui.ribbon.label.profile-sidebar-photo-ribbon::after{
+		display: none;
+	}
+}
+
 @media all and ( max-width: 767px ){
 
 	/* Mobile auth pages */
