@@ -25,7 +25,7 @@
 				<nav class="profile-sidebar-nav">
 					<ul>
 						<li class="active">
-							<a href="#">
+							<a href="profile-profile.html">
 								<i class="id card outline icon"></i>
 								<span>Профиль</span>
 							</a>
@@ -71,6 +71,10 @@
 			</div>
 			<div class="profile-content-wrapper">
 				<div class="profile-content-container-normal">
+					<div class="ui floating message message-food">
+						<i class="close icon"></i>
+						<p>This is a special notification which you can dismiss if you're bored with it.</p>
+					</div>
 					<div class="profile-content-container-heaader">
 						<h1>Профиль</i></h1>
 					</div>
@@ -105,7 +109,7 @@
 												<input type="text" placeholder="Введите адрес" name="place-address" id="place-address">
 											</div>
 										</div>
-										<a href="#" class="ui icon button orange right floated" title="Открыть карту">
+										<a href="profile-map.html" class="ui icon button orange right floated" title="Открыть карту">
 											<i class="map icon"></i>
 										</a>
 									</div>
@@ -1024,8 +1028,8 @@
  										<i class="dropdown icon"></i>		
  										<div class="default text">Выберите сервисы</div>		
  										<div class="menu">		
- 											<div class="item" data-value="wifi"><i class="rss icon"></i>wi-fi</div>		
- 											<div class="item" data-value="shipping"><i class="shipping icon"></i>доставка</div>		
+ 											<div class="item" data-value="wifi">wi-fi</div>		
+ 											<div class="item" data-value="shipping">Доставка</div>		
  										</div>		
  									</div>		
  								</div>		
@@ -1143,7 +1147,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="ui basic modal" id="cropper-modal">
+	<div class="ui basic modal small" id="cropper-modal">
 	  <div class="content">
 	  	<div class="place-avatar-cropper-wrap">
 			<div id="upload-demo" class="croppie-container"></div>
@@ -1269,9 +1273,9 @@
 				allowAdditions: true
 			});
 
+			// Prevent form
 			$('#profile-form').on('submit', function(event) {
 				event.preventDefault();
-				
 			});
 		});
 	</script>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin Panel - Profile Map</title>
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="fonts/icon.css">
+	<link rel="stylesheet" href="css/semantic.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mediaq.css">
+</head>
+<body>
+	<div id="app">
+		<div class="profile-page-wrapper">
+			<div class="profile-sidebar">
+				<a href="profile-profile.html" class="profile-sidebar-header">
+					<img src="assets/logo.svg" alt="Pocket Menu">
+				</a>
+				<div class="profile-sidebar-photo">
+					<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto">
+					<span class="ui orange right ribbon label profile-sidebar-photo-ribbon">Faro del porto</span>
+				</div>
+				<nav class="profile-sidebar-nav">
+					<ul>
+						<li class="active">
+							<a href="profile-profile.html">
+								<i class="id card outline icon"></i>
+								<span>Профиль</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="food icon"></i>
+								<span>Меню</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="newspaper icon"></i>
+								<span>Новости</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="building outline icon"></i>
+								<span>План заведения</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="pie chart icon"></i>
+								<span>Аналитика</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="settings icon"></i>
+								<span>Настройки</span>
+							</a>
+						</li>
+						<li>
+							<a href="index.html">
+								<i class="sign out icon"></i>
+								<span>Выйти</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="profile-content-wrapper">
+				<div>
+	                <div class="register-place-map-wrapper">
+	                    <div class="register-place-map-container" id="register-place-map-container"> </div>
+	                    <div class="map-location-card">
+	                        <h2 class="map-location-card-header">Местоположение</h2>
+	                        <div class="map-location-card-content">
+	                            <p>
+	                                Найдите на карте местоположение Вашего заведения и нажмите на него
+	                            </p>
+	                        </div>
+	                        <div class="map-location-card-footer clearfix">
+	                            <div
+	                              onClick={this.savePoint}
+	                              class="ui button orange right floated">Сохранить координаты</div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div className="map-loading-overlay visible">
+	                    <div className='map-loading'>
+	                        <div className='bullet'> </div>
+	                        <div className='bullet'> </div>
+	                        <div className='bullet'> </div>
+	                        <div className='bullet'> </div>
+	                    </div>
+	                </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/libs/ofi.min.js"></script>
+	<script src="js/libs/jquery-3.2.1.min.js"></script>
+	<script src="js/libs/semantic.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJl-oqf0NECka4ZBhXlOVfeUnLvAa-Yw"></script>
+	<script>
+		// Google maps
+		// Create and Initialise the Map (required) our google map below
+		google.maps.event.addDomListener(window, 'load', init(49.441984, 32.064614));
+
+		function init(lat, lng) {
+		// Basic options for a simple Google Map
+		var mapOptions = {
+		// How zoomed in you want the map to start at (always required)
+		zoom: 18,
+		scrollwheel: true,
+		// The latitude and longitude to center the map (always required)
+		center: new google.maps.LatLng(49.441984, 32.064614),
+		disableDefaultUI: true,
+		draggable: true,
+		styles:
+			[{featureType:"landscape",elementType:"labels",stylers:[{visibility:"on"}]},{featureType:"transit",elementType:"labels",stylers:[{visibility:"off"}]},{featureType:"poi",elementType:"labels",stylers:[{visibility:"off"}]},{featureType:"water",elementType:"labels",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"labels.icon",stylers:[{visibility:"off"}]},{stylers:[{hue:"#00aaff"},{saturation:-100},{gamma:2.15},{lightness:12}]},{featureType:"road",elementType:"labels.text.fill",stylers:[{visibility:"on"},{lightness:24}]},{featureType:"road",elementType:"geometry",stylers:[{lightness:57}]}]
+
+		};
+		var mapElement = document.getElementById('register-place-map-container');
+		// Create the Google Map using out element and options defined above
+		var map = new google.maps.Map(mapElement, mapOptions);
+		var image = "assets/icons/icon-pin.svg";
+		// Define the Lattitude and Longitude for the map location
+		var myLatLng = new google.maps.LatLng(49.441984, 32.064614);
+		// Define the map marker characteristics
+		var mapMarker = new
+		google.maps.Marker({
+			position: myLatLng,
+			map: map,
+			title: '',
+			 icon: image
+		});
+		}
+
+		// Loader example
+		var loaderTimeout = setTimeout(function(){
+			$('.map-loading-overlay').removeClass('visible');
+
+			var modalTimeout = setTimeout(function(){
+				$('#choose-place-modal').modal('show');
+			}, 1000);
+		}, 2000);
+	</script>
+</body>
+</html>

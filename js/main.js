@@ -11,4 +11,7 @@ $(document).ready(function() {
 		offset: -12,
 		inline: true
 	});
+	$('.message .close').on('click', function() {
+		$(this).closest('.message').transition('fade');
+	});
 });
