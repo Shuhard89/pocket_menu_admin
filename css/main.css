@@ -586,6 +586,13 @@ a.auth-soc-login-btn__messenger{
 	padding: 0 0 60px 0;
 }
 
+.profile-content-container-wide{
+	width: 860px;
+	max-width: 100%;
+	margin: 0 40px 0 60px;
+	padding: 0 0 60px 0;
+}
+
 .profile-content-container-heaader{
 	padding: 20px 0;
 }
@@ -1048,4 +1055,229 @@ i.icon.popup-heading-icon:hover{
 
 .menu-item-form .fields-block.fields-block-nomargin{
 	margin: 0;
+}
+
+.ui.segment.menu-segment{
+	margin: 0 0 20px 0;
+	position: relative;
+}
+
+.ui.segment.menu-segment:last-of-type{
+	margin: 0;
+}
+
+.ui.ribbon.label.menu-segment-label{
+	left: calc(-1.5rem - 1.2em);
+}
+
+
+
+/* Profile menu page */
+
+.new-food-items-slider-wrapper{
+	margin: 20px 0 0 0;
+	overflow: hidden;
+}
+
+.new-food-items-slider-list{
+	width: 30000px;
+}
+
+.new-food-items-slider-list > li{
+	width: 190px;
+	margin: 0 19px 0 0;
+	float: left;
+}
+
+.new-food-items-slider-list > li:last-of-type{
+	margin: 0;
+}
+
+.new-food-item-preview{
+	display: block;
+	width: 100%;
+	height: 142px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 4px;
+	background-color: #000;
+}
+
+.new-food-item-preview-img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: opacity .3s ease, transform .3s ease;
+}
+
+.new-food-item-preview-btns{
+	position: absolute;
+	top: 7px;
+	right: 3px;
+	opacity: 0;
+	transform: scale(.5);
+	transition: opacity .3s ease, transform .3s ease;
+	transition-delay: .1s;
+}
+
+.new-food-item-preview-img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.new-food-item-preview:hover img{
+	opacity: .5;
+	transform: scale(1.1);
+}
+
+.new-food-item-preview:hover .new-food-item-preview-btns{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.new-food-item-info{
+	padding: 7px 4px 0 4px;
+}
+
+.new-food-category,
+a.new-food-category{
+	display: inline-block;
+	font-size: 10px;
+	color: #aaa;
+	transition: color .3s ease;
+}
+
+.new-food-category:hover,
+a.new-food-category:hover{
+	color: #ec910e;
+}
+
+.new-food-name,
+a.new-food-name{
+	display: inline-block;
+	font-weight: 600;
+	font-size: 14px;
+	color: #333;
+	transition: color .3s ease;
+}
+
+.new-food-name:hover,
+a.new-food-name:hover{
+	color: #ec910e;
+}
+
+.new-food-items-slider-controls{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 20px;
+}
+
+.new-food-items-slider-controls i.icon{
+	height: 26px;
+	cursor: pointer;
+	transition: color .3s ease;
+}
+
+.new-food-items-slider-controls i.icon:not(.disabled):hover{
+	color: #ec910e;
+}
+
+.menu-categories-list{
+	margin: 20px 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.menu-categories-list > li{
+	width: 255px;
+	margin: 0 26px 28px 0;
+}
+
+.menu-categories-list > li:nth-of-type(3n){
+	margin: 0 0 28px 0;
+}
+
+.menu-categories-list > li:nth-last-of-type(1){
+	margin: 0;
+}
+
+.menu-categories-list > li:nth-last-of-type(2),
+.menu-categories-list > li:nth-last-of-type(3){
+	margin: 0 26px 0 0;
+}
+
+.menu-category-preview{
+	width: 100%;
+	height: 191px;
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: #000;
+	position: relative;
+}
+
+.menu-category-preview-img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.menu-category-preview-img > img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: opacity .3s ease, transform .3s ease;
+}
+
+.menu-category-preview:hover img{
+	opacity: .5;
+	transform: scale(1.1);
+}
+
+.menu-category-preview-btns{
+	position: absolute;
+	top: 7px;
+	right: 3px;
+	opacity: 0;
+	transform: scale(.5);
+	transition: opacity .3s ease, transform .3s ease;
+	transition-delay: .1s;
+}
+
+.menu-category-preview-img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.menu-category-preview:hover .menu-category-preview-btns{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.menu-category-preview-info{
+	padding: 10px 4px 0 4px;
+}
+
+.menu-category-preview-info a{
+	color: #000;
+	display: inline-block;
+	font-weight: 600;
+	transition: color .3s ease;
+}
+
+.menu-category-preview-info a:hover{
+	color: #ec910e;
+}
+
+.ui.labeled.icon.button.add-category-btn{
+	position: absolute;
+	top: 19px;
+	right: 20px;
 }

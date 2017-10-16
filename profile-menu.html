@@ -31,7 +31,7 @@
 							</a>
 						</li>
 						<li class="active">
-							<a href="#">
+							<a href="profile-menu.html">
 								<i class="food icon"></i>
 								<span>Меню</span>
 							</a>
@@ -70,58 +70,305 @@
 				</nav>
 			</div>
 			<div class="profile-content-wrapper">
-				<div class="profile-content-container-normal">
+				<div class="profile-content-container-wide">
 					<div class="profile-content-container-heaader">
 						<h1>Меню</h1>
 					</div>
-					<div class="ui segment profile-segment">
-						<form action="#" method="POST" id="add-category-form" class="ui form">
-							<div class="fields-block fields-block-nomargin clearfix">
-								<div class="profile-avatar-block">
-									<h2 class="fields-heading">Фото категории <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-									<div class="profile-avatar-container profile-avatar-container-menu-category" id="menu-cat-crop">
-										<img src="assets/profile/placeholder-image.png" alt="Avatar">
-										<div class="upload-place-avatar-btn">
-											<input type="file" name="place-avatar" id="place-avatar-upload" accept="image/*" class="place-avatar-btn">
-											<label for="place-avatar-upload">
-												<div class="place-avatar-upload-text">
-													<i class="pencil icon"></i> Загрузить фото
-												</div>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="profile-name-address-block">
-									<h2 class="fields-heading">Родительская категория <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-									<div class="field">
-										<div class="ui selection dropdown">
-											<input type="hidden" name="parent-category">
-											<i class="dropdown icon"></i>
-											<div class="default text">Выберите категорию меню</div>
-											<div class="menu">
-												<div class="item" data-value="no-parent">Нет родительской категории</div>
-												<div class="item" data-value="kitchen">Кухня</div>
-												<div class="item" data-value="bar">Бар</div>
-												<div class="item" data-value="drinks">Напитки</div>
-											</div>
-										</div>
-									</div>
-									<h2 class="fields-heading fields-heading-cat-name">Название категории <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-									<div class="profile-address-map-container clearfix">
-										<div class="field">
-											<div class="ui input fluid">
-												<input type="text" placeholder="Введите название категории" name="category-name" id="category-name">
-											</div>
-										</div>
-									</div>
-								</div>
+					<div class="ui segment profile-segment menu-segment">
+						<form action="#" method="POST" id="menu-search-form" class="ui form">
+							<div class="ui icon input fluid">
+								<input type="text" placeholder="Поиск...">
+								<i class="search icon link"></i>
 							</div>
 						</form>
 					</div>
-					<div class="main-form-buttons">
-						<button type="submit" class="ui button orange" form="profile-form">Добавить</button>
-						<span class="ui button red basic" form="profile-form">Отменить</span>
-						<span class="ui button red" form="profile-form" onclick="$('#remove-category-msg').modal('show');">Удалить</span>
+					<div class="ui segment profile-segment menu-segment">
+						<span class="ui orange ribbon label menu-segment-label">Новинки заведения</span>
+						<div class="new-food-items-slider-wrapper frame">
+							<ul class="new-food-items-slider-list clearfix slidee">
+								<li>
+									<div class="new-food-item-preview">
+										<a href="#" class="new-food-item-preview-img">
+											<img src="assets/placeholder_content/1.jpg" alt="title">
+										</a>
+										<div class="new-food-item-preview-btns">
+											<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+												<i class="icon pencil"></i>
+											</a>
+											<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+												<i class="icon remove"></i>
+											</a>
+										</div>
+									</div>
+									<div class="new-food-item-info">
+										<a href="#" class="new-food-category">Вторые блюда</a>
+										<br>
+										<a href="#" class="new-food-name">Гарибальди</a>
+									</div>
+								</li>
+								<li>
+									<div class="new-food-item-preview">
+										<a href="#" class="new-food-item-preview-img">
+											<img src="assets/placeholder_content/2.jpg" alt="title">
+										</a>
+										<div class="new-food-item-preview-btns">
+											<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+												<i class="icon pencil"></i>
+											</a>
+											<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+												<i class="icon remove"></i>
+											</a>
+										</div>
+									</div>
+									<div class="new-food-item-info">
+										<a href="#" class="new-food-category">Мясные блюда</a>
+										<br>
+										<a href="#" class="new-food-name">Шашлык из свинины с соусом BBQ</a>
+									</div>
+								</li>
+								<li>
+									<div class="new-food-item-preview">
+										<a href="#" class="new-food-item-preview-img">
+											<img src="assets/placeholder_content/3.jpg" alt="title">
+										</a>
+										<div class="new-food-item-preview-btns">
+											<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+												<i class="icon pencil"></i>
+											</a>
+											<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+												<i class="icon remove"></i>
+											</a>
+										</div>
+									</div>
+									<div class="new-food-item-info">
+										<a href="#" class="new-food-category">Салаты</a>
+										<br>
+										<a href="#" class="new-food-name">Тальятта с рукколой</a>
+									</div>
+								</li>
+								<li>
+									<div class="new-food-item-preview">
+										<a href="#" class="new-food-item-preview-img">
+											<img src="assets/placeholder_content/4.jpg" alt="title">
+										</a>
+										<div class="new-food-item-preview-btns">
+											<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+												<i class="icon pencil"></i>
+											</a>
+											<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+												<i class="icon remove"></i>
+											</a>
+										</div>
+									</div>
+									<div class="new-food-item-info">
+										<a href="#" class="new-food-category">Гарячие блюда</a>
+										<br>
+										<a href="#" class="new-food-name">Овощи гриль</a>
+									</div>
+								</li>
+								<li>
+									<div class="new-food-item-preview">
+										<a href="#" class="new-food-item-preview-img">
+											<img src="assets/placeholder_content/5.jpg" alt="title">
+										</a>
+										<div class="new-food-item-preview-btns">
+											<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+												<i class="icon pencil"></i>
+											</a>
+											<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+												<i class="icon remove"></i>
+											</a>
+										</div>
+									</div>
+									<div class="new-food-item-info">
+										<a href="#" class="new-food-category">Вторые блюда</a>
+										<br>
+										<a href="#" class="new-food-name">Гарибальди</a>
+									</div>
+								</li>
+								<li>
+									<div class="new-food-item-preview">
+										<a href="#" class="new-food-item-preview-img">
+											<img src="assets/placeholder_content/6.jpg" alt="title">
+										</a>
+										<div class="new-food-item-preview-btns">
+											<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+												<i class="icon pencil"></i>
+											</a>
+											<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+												<i class="icon remove"></i>
+											</a>
+										</div>
+									</div>
+									<div class="new-food-item-info">
+										<a href="#" class="new-food-category">Вторые блюда</a>
+										<br>
+										<a href="#" class="new-food-name">Гарибальди</a>
+									</div>
+								</li>
+								<li>
+									<div class="new-food-item-preview">
+										<a href="#" class="new-food-item-preview-img">
+											<img src="assets/placeholder_content/7.jpg" alt="title">
+										</a>
+										<div class="new-food-item-preview-btns">
+											<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+												<i class="icon pencil"></i>
+											</a>
+											<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+												<i class="icon remove"></i>
+											</a>
+										</div>
+									</div>
+									<div class="new-food-item-info">
+										<a href="#" class="new-food-category">Вторые блюда</a>
+										<br>
+										<a href="#" class="new-food-name">Гарибальди</a>
+									</div>
+								</li>
+								<li>
+									<div class="new-food-item-preview">
+										<a href="#" class="new-food-item-preview-img">
+											<img src="assets/placeholder_content/1.jpg" alt="title">
+										</a>
+										<div class="new-food-item-preview-btns">
+											<a href="profile-add-menu-item.html" class="circular ui icon button orange mini" title="Изменить">
+												<i class="icon pencil"></i>
+											</a>
+											<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-food-item-msg').modal('show');">
+												<i class="icon remove"></i>
+											</a>
+										</div>
+									</div>
+									<div class="new-food-item-info">
+										<a href="#" class="new-food-category">Вторые блюда</a>
+										<br>
+										<a href="#" class="new-food-name">Гарибальди</a>
+									</div>
+								</li>
+							</ul>
+							<div class="new-food-items-slider-controls">
+								<i class="angle left icon"></i>
+								<i class="angle right icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="ui segment profile-segment menu-segment">
+						<span class="ui orange ribbon label menu-segment-label">Категории меню</span>
+						<a href="profile-add-menu-category.html" class="ui labeled icon button orange add-category-btn mini">
+							<i class="plus icon"></i>
+							Добавить категорию
+						</a>
+						<ul class="menu-categories-list">
+							<li>
+								<div class="menu-category-preview">
+									<a href="#" class="menu-category-preview-img">
+										<img src="assets/placeholder_content/3.jpg" alt="title">
+									</a>
+									<div class="menu-category-preview-btns">
+										<a href="profile-add-menu-category.html" class="circular ui icon button orange mini" title="Изменить">
+											<i class="icon pencil"></i>
+										</a>
+										<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-category-msg').modal('show');">
+											<i class="icon remove"></i>
+										</a>
+									</div>
+								</div>
+								<div class="menu-category-preview-info">
+									<a href="#">Первые блюда</a>
+								</div>
+							</li>
+							<li>
+								<div class="menu-category-preview">
+									<a href="#" class="menu-category-preview-img">
+										<img src="assets/placeholder_content/6.jpg" alt="title">
+									</a>
+									<div class="menu-category-preview-btns">
+										<a href="profile-add-menu-category.html" class="circular ui icon button orange mini" title="Изменить">
+											<i class="icon pencil"></i>
+										</a>
+										<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-category-msg').modal('show');>
+											<i class="icon remove"></i>
+										</a>
+									</div>
+								</div>
+								<div class="menu-category-preview-info">
+									<a href="#">Вторые блюда</a>
+								</div>
+							</li>
+							<li>
+								<div class="menu-category-preview">
+									<a href="#" class="menu-category-preview-img">
+										<img src="assets/placeholder_content/4.jpg" alt="title">
+									</a>
+									<div class="menu-category-preview-btns">
+										<a href="profile-add-menu-category.html" class="circular ui icon button orange mini" title="Изменить">
+											<i class="icon pencil"></i>
+										</a>
+										<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-category-msg').modal('show');>
+											<i class="icon remove"></i>
+										</a>
+									</div>
+								</div>
+								<div class="menu-category-preview-info">
+									<a href="#">Закуски</a>
+								</div>
+							</li>
+							<li>
+								<div class="menu-category-preview">
+									<a href="#" class="menu-category-preview-img">
+										<img src="assets/placeholder_content/2.jpg" alt="title">
+									</a>
+									<div class="menu-category-preview-btns">
+										<a href="profile-add-menu-category.html" class="circular ui icon button orange mini" title="Изменить">
+											<i class="icon pencil"></i>
+										</a>
+										<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-category-msg').modal('show');>
+											<i class="icon remove"></i>
+										</a>
+									</div>
+								</div>
+								<div class="menu-category-preview-info">
+									<a href="#">Напитки</a>
+								</div>
+							</li>
+							<li>
+								<div class="menu-category-preview">
+									<a href="#" class="menu-category-preview-img">
+										<img src="assets/placeholder_content/7.jpg" alt="title">
+									</a>
+									<div class="menu-category-preview-btns">
+										<a href="profile-add-menu-category.html" class="circular ui icon button orange mini" title="Изменить">
+											<i class="icon pencil"></i>
+										</a>
+										<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-category-msg').modal('show');>
+											<i class="icon remove"></i>
+										</a>
+									</div>
+								</div>
+								<div class="menu-category-preview-info">
+									<a href="#">Рыбные блюда</a>
+								</div>
+							</li>
+							<li>
+								<div class="menu-category-preview">
+									<a href="#" class="menu-category-preview-img">
+										<img src="assets/placeholder_content/5.jpg" alt="title">
+									</a>
+									<div class="menu-category-preview-btns">
+										<a href="profile-add-menu-category.html" class="circular ui icon button orange mini" title="Изменить">
+											<i class="icon pencil"></i>
+										</a>
+										<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-category-msg').modal('show');>
+											<i class="icon remove"></i>
+										</a>
+									</div>
+								</div>
+								<div class="menu-category-preview-info">
+									<a href="#">Десерты</a>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -140,84 +387,36 @@
 			<div class="ui approve button red">Удалить</div>
 		</div>
 	</div>
-	<div class="ui basic modal small" id="cropper-modal">
-	  <div class="content">
-	  	<div class="place-avatar-cropper-wrap">
-			<div id="upload-demo" class="croppie-container"></div>
-	  	</div>
-	  </div>
-	  <div class="actions center">
-		<div class="ui red basic cancel inverted button cancel-place-avatar-btn">
-          <i class="remove icon"></i>
-          Отменить
-      	</div>
-	    <div class="ui green ok inverted button save-place-avatar-btn">
-	      <i class="checkmark icon"></i>
-	      Сохранить
-	    </div>
-	  </div>
+	<div class="ui modal tiny" id="remove-food-item-msg">
+		<div class="header">Предупреждение</div>
+		<div class="content">
+			<p>
+				<b>Вы действительно хотите удалить это блюдо?</b>
+			</p>
+			<p>Данное действие невозможно будет вернуть.</p>
+		</div>
+		<div class="actions">
+			<div class="ui cancel button basic red">Отменить</div>
+			<div class="ui approve button red">Удалить</div>
+		</div>
 	</div>
 	<script src="js/libs/ofi.min.js"></script>
 	<script src="js/libs/jquery-3.2.1.min.js"></script>
 	<script src="js/libs/semantic.min.js"></script>
-	<script src="js/libs/croppie.min.js"></script>
+	<script src="js/libs/sly.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		$(function() {
-			// Avatar cropping
-			function avatarUpload() {
-				var $uploadCrop;
-
-				function readFile(input) {
-		 			if (input.files && input.files[0]) {
-			            var reader = new FileReader();
-			            
-			            reader.onload = function (e) {
-							$('.upload-demo').addClass('ready');
-			            	$uploadCrop.croppie('bind', {
-			            		url: e.target.result
-			            	}).then(function(){
-			            		console.log('jQuery bind complete');
-			            	});
-			            	
-			            }
-			            
-			            reader.readAsDataURL(input.files[0]);
-			        }
-			        else {
-				        swal("Sorry - you're browser doesn't support the FileReader API");
-				    }
-				}
-
-				$uploadCrop = $('#upload-demo').croppie({
-					viewport: {
-						width: 256,
-						height: 192
-					},
-					enableExif: true
-				});
-
-				$('#place-avatar-upload').on('change', function () {
-					readFile(this);
-					$('#cropper-modal').modal('setting', 'closable', false).modal('show');
-				});
-				$('.save-place-avatar-btn').on('click', function (ev) {
-					$uploadCrop.croppie('result', {
-						type: 'base64',
-						size: 'viewport'
-					}).then(function (resp) {
-						$('#place-avatar-upload').val('');
-						$('.profile-avatar-container > img').remove();
-						$('.profile-avatar-container').append('<img src="' + resp + '"></img>');
-					});
-				});
-				$('.cancel-place-avatar-btn').on('click', function(ev) {
-					$('#place-avatar-upload').val('');
-					destroy();
-				});
-			}
-
-			avatarUpload();
+			var slyOptions = {
+				horizontal: 1,
+				itemNav: 'basic',
+				speed: 300,
+				mouseDragging: 1,
+				touchDragging: 1,
+				prevPage: $('.new-food-items-slider-controls .icon.left'),
+				nextPage: $('.new-food-items-slider-controls .icon.right')
+			};
+			$('.new-food-items-slider-wrapper').sly(slyOptions);
 		});
 	</script>
 </body>
