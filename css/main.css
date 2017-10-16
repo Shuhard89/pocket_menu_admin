@@ -1027,3 +1027,25 @@ i.icon.popup-heading-icon:hover{
 .settings-code-add-tel-field.hidden{
 	display: none;
 }
+
+
+
+
+
+/* Add food item and menu category style */
+
+.profile-avatar-container-menu-category{
+	height: 142px;
+}
+
+.fields-heading-cat-name{
+	margin: 35px 0 15px 0;
+}
+
+.menu-item-form .fields-block{
+	margin: 0 0 35px 0;
+}
+
+.menu-item-form .fields-block.fields-block-nomargin{
+	margin: 0;
+}
