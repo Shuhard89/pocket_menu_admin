@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Admin Panel - Add menu item</title>
+	<title>Admin Panel - Menu</title>
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="fonts/icon.css">
 	<link rel="stylesheet" href="css/semantic.min.css">
@@ -72,13 +72,13 @@
 			<div class="profile-content-wrapper">
 				<div class="profile-content-container-normal">
 					<div class="profile-content-container-heaader">
-						<h1>Добавить блюдо</h1>
+						<h1>Меню</h1>
 					</div>
 					<div class="ui segment profile-segment">
-						<form action="#" method="POST" id="add-menu-item" class="ui form menu-item-form">
-							<div class="fields-block clearfix">
+						<form action="#" method="POST" id="add-category-form" class="ui form">
+							<div class="fields-block fields-block-nomargin clearfix">
 								<div class="profile-avatar-block">
-									<h2 class="fields-heading">Фото блюда <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
+									<h2 class="fields-heading">Фото категории <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
 									<div class="profile-avatar-container profile-avatar-container-menu-category" id="menu-cat-crop">
 										<img src="assets/profile/placeholder-image.png" alt="Avatar">
 										<div class="upload-place-avatar-btn">
@@ -92,101 +92,26 @@
 									</div>
 								</div>
 								<div class="profile-name-address-block">
-									<h2 class="fields-heading">Категория <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
+									<h2 class="fields-heading">Родительская категория <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
 									<div class="field">
 										<div class="ui selection dropdown">
-											<input type="hidden" name="menu-item-category">
+											<input type="hidden" name="parent-category">
 											<i class="dropdown icon"></i>
-											<div class="default text">Выберите категорию блюда</div>
+											<div class="default text">Выберите категорию меню</div>
 											<div class="menu">
+												<div class="item" data-value="no-parent">Нет родительской категории</div>
 												<div class="item" data-value="kitchen">Кухня</div>
 												<div class="item" data-value="bar">Бар</div>
 												<div class="item" data-value="drinks">Напитки</div>
 											</div>
 										</div>
 									</div>
-									<h2 class="fields-heading fields-heading-cat-name">Подкатегория <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
+									<h2 class="fields-heading fields-heading-cat-name">Название категории <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
 									<div class="profile-address-map-container clearfix">
 										<div class="field">
-											<div class="ui selection dropdown">
-												<input type="hidden" name="menu-item-category">
-												<i class="dropdown icon"></i>
-												<div class="default text">Подкатегория</div>
-												<div class="menu">
-													<div class="item" data-value="kitchen">Первые блюда</div>
-													<div class="item" data-value="bar">Вторые блюда</div>
-													<div class="item" data-value="drinks">Супы</div>
-												</div>
+											<div class="ui input fluid">
+												<input type="text" placeholder="Введите название категории" name="category-name" id="category-name">
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="fields-block">
-								<h2 class="fields-heading">Название блюда <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-								<div class="field soc-links-wrapper">
-									<div class="field">
-										<div class="ui input fluid">
-											<input type="text" placeholder="Введите название" name="menu-item-name">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="fields-block">
-								<h2 class="fields-heading">Описание блюда <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-								<div class="field">
-									<div class="ui textarea fluid">
-										<textarea placeholder="Введите описание" name="place-description"></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="fields-block">
-								<div class="clearfix">
-									<div class="field half-width half-width-float">
-										<h2 class="fields-heading">Вес <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-										<div class="ui right labeled input">
-											<input type="text" placeholder="Вес порции" name="menu-item-weight">
-											<div class="ui dropdown label">
-													<div class="text">g</div>
-													<i class="dropdown icon"></i>
-												<div class="menu">
-													<div class="item">g</div>
-													<div class="item">l</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="field half-width half-width-float">
-										<h2 class="fields-heading">Цена <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-										<div class="ui right labeled input">
-											<input type="text" placeholder="Цена" name="menu-item-weight">
-											<div class="ui dropdown label">
-													<div class="text">uah</div>
-													<i class="dropdown icon"></i>
-												<div class="menu">
-													<div class="item">uah</div>
-													<div class="item">usd</div>
-													<div class="item">eur</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="fields-block fields-block-nomargin">
-								<div class="clearfix">
-									<div class="field half-width half-width-float">
-										<h2 class="fields-heading">Наличие<i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-										<div class="ui checkbox">
-											<input type="checkbox" name="in-stock">
-											<label>В наличии</label>
-										</div>
-									</div>
-									<div class="field half-width half-width-float">
-										<h2 class="fields-heading">Новинка<i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
-										<div class="ui checkbox">
-											<input type="checkbox" name="new-food-item">
-											<label>Новинка</label>
 										</div>
 									</div>
 								</div>
@@ -196,19 +121,19 @@
 					<div class="main-form-buttons">
 						<button type="submit" class="ui button orange" form="profile-form">Добавить</button>
 						<span class="ui button red basic" form="profile-form">Отменить</span>
-						<span class="ui button red" form="profile-form" onclick="$('#remove-food-item-msg').modal('show');">Удалить</span>
+						<span class="ui button red" form="profile-form" onclick="$('#remove-category-msg').modal('show');">Удалить</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="ui modal tiny" id="remove-food-item-msg">
+	<div class="ui modal tiny" id="remove-category-msg">
 		<div class="header">Предупреждение</div>
 		<div class="content">
 			<p>
-				<b>Вы действительно хотите удалить это блюдо?</b>
+				<b>Вы действительно хотите удалить этот раздел?</b>
 			</p>
-			<p>Данное действие невозможно будет вернуть.</p>
+			<p>Вся информация связанная с этим разделом так же будет удалена! Данное действие невозможно будет вернуть.</p>
 		</div>
 		<div class="actions">
 			<div class="ui cancel button basic red">Отменить</div>
