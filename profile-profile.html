@@ -1017,6 +1017,20 @@
 								</span>
 							</div>
 							<div class="fields-block">
+ 								<h2 class="fields-heading">Сервисы <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>		
+ 								<div class="field">		
+ 									<div class="ui fluid multiple search selection dropdown allow-add-dd">		
+ 										<input name="services" type="hidden">		
+ 										<i class="dropdown icon"></i>		
+ 										<div class="default text">Выберите сервисы</div>		
+ 										<div class="menu">		
+ 											<div class="item" data-value="wifi"><i class="rss icon"></i>wi-fi</div>		
+ 											<div class="item" data-value="shipping"><i class="shipping icon"></i>доставка</div>		
+ 										</div>		
+ 									</div>		
+ 								</div>		
+ 							</div>
+							<div class="fields-block">
 								<h2 class="fields-heading">Оплата <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
 								<div class="clearfix">
 									<div class="field half-width half-width-float">
@@ -1096,6 +1110,20 @@
 									</div>
 								</div>
 							</div>
+								<div class="fields-block">		
+								<h2 class="fields-heading">Тип заведения <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>		
+ 								<div class="field">		
+ 									<div class="ui fluid multiple search selection dropdown allow-add-dd">		
+ 										<input name="place-type" type="hidden">		
+ 										<i class="dropdown icon"></i>		
+ 										<div class="default text">Выберите тип заведения</div>		
+ 										<div class="menu">		
+ 											<div class="item" data-value="bar">Бар</div>		
+ 											<div class="item" data-value="restaurant">Ресторан</div>		
+ 										</div>		
+ 									</div>		
+ 								</div>		
+ 							</div>
 							<div class="fields-block fields-block-nomargin">
 								<h2 class="fields-heading">Описание заведения <i class="help circle icon popup-heading-icon has-popup" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui pariatur in iure." data-variation="wide"></i></h2>
 								<div class="field">
@@ -1235,6 +1263,16 @@
 			}
 
 			avatarUpload();
+
+			// Dropdowns allow additions
+			$('.ui.dropdown.allow-add-dd').dropdown({
+				allowAdditions: true
+			});
+
+			$('#profile-form').on('submit', function(event) {
+				event.preventDefault();
+				
+			});
 		});
 	</script>
 </body>
