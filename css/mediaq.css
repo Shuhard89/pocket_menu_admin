@@ -46,7 +46,7 @@
 		height: calc(100% - 60px);
 		top: 60px;
 		left: -330px;
-		transition: transform 1s ease;
+		transition: transform .4s ease;
 		z-index: 2000;
 	}
 
@@ -79,11 +79,7 @@
 	  background-color: #000;
 	  position: absolute;
 	  right: 0;
-	  -webkit-transition: top .6s ease-out, bottom .6s ease-out, transform .6s ease-out;
-	  -webkit-transition: top .6s ease-out, bottom .6s ease-out, -webkit-transform .6s ease-out;
-	  transition: top .6s ease-out, bottom .6s ease-out, -webkit-transform .6s ease-out;
-	  transition: top .6s ease-out, bottom .6s ease-out, transform .6s ease-out;
-	  transition: top .6s ease-out, bottom .6s ease-out, transform .6s ease-out, -webkit-transform .6s ease-out;
+	  transition: top .4s ease-out, bottom .4s ease-out, transform .4s ease-out;
 	}
 
 	.mobile-burger > span:first-of-type{
