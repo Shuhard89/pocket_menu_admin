@@ -287,7 +287,7 @@
 										<a href="profile-add-menu-category.html" class="circular ui icon button orange mini" title="Изменить">
 											<i class="icon pencil"></i>
 										</a>
-										<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-category-msg').modal('show');>
+										<a href="#" class="circular ui icon button red mini" title="Удалить" onclick="$('#remove-category-msg').modal('show');">
 											<i class="icon remove"></i>
 										</a>
 									</div>
@@ -410,11 +410,13 @@
 			var slyOptions = {
 				horizontal: 1,
 				itemNav: 'basic',
-				speed: 300,
+				speed: 800,
 				mouseDragging: 1,
 				touchDragging: 1,
 				prevPage: $('.new-food-items-slider-controls .icon.left'),
-				nextPage: $('.new-food-items-slider-controls .icon.right')
+				nextPage: $('.new-food-items-slider-controls .icon.right'),
+				cycleBy: 'pages',
+				pauseOnHover: true
 			};
 			$('.new-food-items-slider-wrapper').sly(slyOptions);
 		});
