@@ -1,3 +1,122 @@
+@media all and ( max-width: 1279px ){
+	.menu-categories-list > li:nth-of-type(3n){
+		margin: 0 26px 28px 0;
+	}
+}
+
+@media all and ( max-width: 1023px ){
+	.menu-categories-list > li:nth-of-type(3n){
+		margin: 0 26px 28px 0;
+	}
+
+	.mobile-header-pane{
+		height: 60px;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+		border-bottom: 1px solid rgba(34,36,38,.15);
+		z-index: 2000;
+		will-change: transform;
+	}
+
+	.profile-page-wrapper{
+		padding: 60px 0 0 0;
+	}
+
+	.mobile-header-logo{
+		display: block;
+		height: 20px;
+		padding: 0 20px;
+		margin: 19px 0 0 40px;
+		float: left;
+	}
+
+	.mobile-header-logo > img{
+		display: block;
+		width: auto;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	.profile-sidebar{
+		height: calc(100% - 60px);
+		top: 60px;
+		left: -330px;
+		transition: transform 1s ease;
+		z-index: 2000;
+	}
+
+	.profile-sidebar.visible{
+		transform: translateX(330px);
+	}
+
+	.profile-sidebar-header{
+		display: none;
+	}
+
+	.profile-content-wrapper{
+		padding: 0;
+	}
+
+	.mobile-burger{
+	  width: 25px;
+	  height: 13px;
+	  margin: 0;
+	  position: absolute;
+	  top: calc(50% - 6.5px);
+	  right: 60px;
+	  cursor: pointer;
+	}
+
+	.mobile-burger > span{
+	  display: block;
+	  width: 100%;
+	  height: 2px;
+	  background-color: #000;
+	  position: absolute;
+	  right: 0;
+	  -webkit-transition: top .6s ease-out, bottom .6s ease-out, transform .6s ease-out;
+	  -webkit-transition: top .6s ease-out, bottom .6s ease-out, -webkit-transform .6s ease-out;
+	  transition: top .6s ease-out, bottom .6s ease-out, -webkit-transform .6s ease-out;
+	  transition: top .6s ease-out, bottom .6s ease-out, transform .6s ease-out;
+	  transition: top .6s ease-out, bottom .6s ease-out, transform .6s ease-out, -webkit-transform .6s ease-out;
+	}
+
+	.mobile-burger > span:first-of-type{
+	  top: 0;
+	  -webkit-transform-origin: 100% 0;
+	          transform-origin: 100% 0;
+	}
+
+	.mobile-burger > span:last-of-type{
+	  bottom: 0;
+	  -webkit-transform-origin: 100% 100%;
+	          transform-origin: 100% 100%;
+	}
+
+	.mobile-burger.opened > span:first-of-type{
+	  -webkit-transform: rotate(-45deg);
+	          transform: rotate(-45deg);
+	  top: -3px;
+	}
+
+	.mobile-burger.opened > span:last-of-type{
+	  -webkit-transform: rotate(45deg);
+	          transform: rotate(45deg);
+	  bottom: -3px;
+	}
+
+	.profile-content-wrapper .register-place-map-wrapper{
+		width: 100%;
+		height: calc(100vh - 60px);
+		left: 0;
+		top: 60px;
+	}
+}
+
 @media all and ( max-height: 620px ){
 	.profile-sidebar{
 		overflow: auto;
@@ -63,5 +182,119 @@
 
 	.ui.button.button-normal-reduce-sides-padding{
 		padding: .78571429em 1.2em .78571429em;
+	}
+
+	.mobile-header-logo{
+		margin: 19px 0 0 0;
+	}
+
+	.mobile-burger{
+		right: 20px;
+	}
+
+	.ui.message.message-food{
+		margin: -1px 0 0 0;
+	}
+
+	.profile-content-container-normal{
+		margin: 0;
+		max-width: 100%;
+	}
+
+	.profile-avatar-block{
+		float: none;
+		margin: 0 0 25px 0;
+	}
+
+	.profile-name-address-block{
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+
+	.fields-heading-profile-address{
+		margin: 25px 0 15px 0;
+	}
+
+	.ui.form .field.profile-address-field{
+		width: 100%;
+		float: none;
+		margin: 0 0 10px 0;
+	}
+
+	.fields-block{
+		margin: 0 0 40px 0;
+	}
+
+	.schedule-day-name{
+		width: 100%;
+		float: none;
+	}
+
+	.schedule-select-container{
+		margin: 0;
+		width: 80px;
+	}
+
+	.schedule-from-select-container.schedule-select-disabled::after{
+		right: 8%;
+	}
+
+	.ui.form .field.half-width{
+		width: 100%;
+	}
+
+	.profile-content-container-heaader{
+		padding: 20px;
+	}
+
+	.main-form-buttons{
+		padding: 0 20px;
+	}
+
+	.profile-content-container-wide{
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.ui.labeled.icon.button.add-category-btn{
+		right: -10px;
+	}
+
+	.menu-categories-list > li,
+	.menu-categories-list > li:nth-of-type(3n),
+	.menu-categories-list > li:nth-last-of-type(2),
+	.menu-categories-list > li:nth-last-of-type(3){
+		margin: 0 auto 28px auto;
+	}
+
+	.menu-category-preview-btns,
+	.new-food-item-preview-btns{
+		opacity: 1;
+	}
+
+	.menu-category-food-item-preview{
+		float: none;
+	}
+
+	.menu-category-food-item-preview-info{
+		width: 100%;
+		float: none;
+		padding: 20px 0 40px 0;
+	}
+
+	.menu-category-food-items-list > li:hover{
+		background-color: #fff;
+	}
+
+	.menu-food-item-preview-btns{
+		opacity: 1;
+		transform: scale(1);
+		right: initial;
+		left: 10px;
+	}
+
+	.main-form-buttons .ui.button{
+		margin: 0 2px 5px 0;
 	}
 }
