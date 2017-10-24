@@ -482,6 +482,10 @@ a.auth-soc-login-btn__messenger{
 
 /* PROFILE - PROFILE PAGE */
 
+.mobile-header-pane{
+	display: none;
+}
+
 .profile-page-wrapper{
 	min-height: 100vh;
 	background-color: #fafafa;
