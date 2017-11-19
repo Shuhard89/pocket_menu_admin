@@ -1265,7 +1265,7 @@ a.new-food-name:hover{
 	color: #ec910e;
 }
 
-.ui.labeled.icon.button.add-category-btn{
+.top-right-menu-btns{
 	position: absolute;
 	top: 19px;
 	right: 20px;
