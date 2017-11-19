@@ -579,7 +579,9 @@ a.auth-soc-login-btn__messenger{
 }
 
 .profile-content-wrapper{
-	padding: 0 0 0 300px;
+	padding: 0 0 50px 300px;
+	min-height: calc(100vh - 50px);
+	position: relative;
 }
 
 .profile-content-container-normal{
@@ -1355,4 +1357,49 @@ a.new-food-name:hover{
 .menu-category-food-items-list > li:hover .menu-food-item-preview-btns{
 	opacity: 1;
 	transform: scale(1);
+}
+
+
+
+
+
+/* FOOTER */
+
+.main-footer{
+	min-height: 50px;
+	width: calc(100% - 300px);
+	position: absolute;
+	bottom: 0;
+	left: 300px;
+	background-color: #fff;
+	border-top: 1px solid rgba(34,36,38,.15);
+	padding: 10px 60px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #bbb;
+}
+
+.footer-copy{
+	display: block;
+	float: left;
+}
+
+.footer-menu-list{
+	float: right;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.footer-menu-list > li{
+	margin: 0 0 0 20px;
+}
+
+.footer-menu-list > li > a{
+	color: #bbb;
+	transition: color .3s ease;
+}
+
+.footer-menu-list > li > a:hover{
+	color: #EC910E;
 }
