@@ -1325,7 +1325,7 @@ a.new-food-name:hover{
 
 .menu-category-food-item-preview-info{
 	width: calc(100% - 175px);
-	padding: 10px 0 0 20px;
+	padding: 10px 0 10px 20px;
 	float: right;
 }
 
