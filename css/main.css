@@ -1431,3 +1431,64 @@ a.new-food-name:hover{
 	padding: 22px 32px;
 	font-size: 14px;
 }
+
+
+
+
+/* Text content styles */
+
+.text-content-container,
+.text-content-container *{
+	line-height: 1.8;
+}
+
+.text-content-container h1,
+.text-content-container h2,
+.text-content-container h3,
+.text-content-container h4,
+.text-content-container h5,
+.text-content-container h6{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 50px 0 25px 0;
+}
+
+.text-content-container h1:first-child,
+.text-content-container h2:first-child,
+.text-content-container h3:first-child,
+.text-content-container h4:first-child,
+.text-content-container h5:first-child,
+.text-content-container h6:first-child{
+	margin: 0 0 25px 0;
+}
+
+.text-content-container p{
+	margin: 0 0 20px 0;
+}
+
+.text-content-container b{
+	font-weight: 600;
+}
+
+.text-content-container ul,
+.text-content-container ol{
+	list-style: initial;
+	padding: 0 20px;
+	margin: 10px 0 20px 0;
+}
+
+.text-content-container ul > li,
+.text-content-container ol > li{
+	margin: 0 0 10px 0;
+}
+
+.text-content-container > img{
+	max-width: 100%;
+	height: auto;
+}
+
+.text-content-container > video,
+.text-content-container > iframe{
+	max-width: 100%;
+}
