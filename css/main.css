@@ -103,15 +103,11 @@ ol{
 	top: 0;
 	left: 0;
 	will-change: transform;
-}
-
-.auth-page-bg > img{
-	display: block;
-	width: 100%;
-	height: 100%;
-	/*-o-object-fit: cover;*/
-	   /*object-fit: cover;*/
-	/*font-family: 'object-fit: cover;';*/
+	background-image: url('../assets/authorization/auth_bg.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .auth-page-bg::after{
