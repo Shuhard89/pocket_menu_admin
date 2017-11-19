@@ -951,7 +951,8 @@ i.icon.popup-heading-icon:hover{
 	border-radius: 100px;
 }
 
-.profile-settings-list > li .mobile.icon{
+.profile-settings-list > li .mobile.icon,
+.profile-settings-list > li .icon.facebook{
 	display: block;
 	font-size: 20px;
 	line-height: 36px;
@@ -963,6 +964,10 @@ i.icon.popup-heading-icon:hover{
 	top: 0;
 	left: 0;
 	margin: 0;
+}
+
+.profile-settings-list > li .icon.facebook{
+	font-size: 14px;
 }
 
 .profile-settings-list > li .remove.icon{
