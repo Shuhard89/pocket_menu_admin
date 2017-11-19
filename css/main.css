@@ -703,6 +703,7 @@ a.auth-soc-login-btn__messenger{
 	position: absolute;
 	right: 12%;
 	top: 15px;
+	display: none;
 }
 
 .schedule-day-btns{
