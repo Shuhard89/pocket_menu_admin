@@ -1319,7 +1319,7 @@ a.new-food-name:hover{
 	transition: transform .5s ease;
 }
 
-.menu-category-food-items-list > li:hover .menu-category-food-item-preview img{
+.menu-category-food-items-list > li:hover .menu-category-food-item-preview:not(.menu-category-food-item-preview__default) img{
 	transform: scale(1.1);
 }
 
