@@ -1486,9 +1486,84 @@ a.new-food-name:hover{
 .text-content-container > img{
 	max-width: 100%;
 	height: auto;
+	margin: 0 0 20px 0;
 }
 
 .text-content-container > video,
 .text-content-container > iframe{
 	max-width: 100%;
+	margin: 0 0 20px 0;
+}
+
+
+
+/* Profile - blog */
+
+.profile-blog-list > li.ui.segment.profile-segment{
+	padding: 0;
+	margin: 0 0 25px 0;
+}
+
+.profile-blog-list > li.ui.segment.profile-segment:last-of-type{
+	margin: 0;
+}
+
+.profile-blog-list > li.ui.segment.profile-segment > a{
+	display: block;
+	padding: 20px;
+	color: #333;
+}
+
+.profile-blog-list > li.ui.segment.profile-segment > a > h2{
+	font-weight: 600;
+	font-size: 20px;
+	margin: 0 0 5px 0;
+}
+
+.profile-blog-list-item-meta{
+	display: block;
+	font-size: 13px;
+	color: #bbb;
+}
+
+.profile-blog-list-item-img{
+	width: calc(100% + 40px);
+	margin: 20px 0 0 -20px;
+	overflow: hidden;
+}
+
+.profile-blog-list-item-img > img{
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: transform .5s ease;
+}
+
+.profile-blog-list > li.ui.segment.profile-segment > a:hover img{
+	transform: scale(1.05);
+}
+
+.profile-blog-list-item-excerpt{
+	margin: 20px 0 0 0;
+}
+
+.profile-blog-list-item-excerpt > p{
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+.profile-blog-list-item-excerpt > span{
+	display: block;
+	font-weight: 600;
+	font-size: 14px;
+	color: #EC910E;
+	text-align: right;
+	transition: color .5s ease, transform .5s ease;
+	margin: 15px 10px 0 0;
+}
+
+.profile-blog-list > li.ui.segment.profile-segment > a:hover .profile-blog-list-item-excerpt > span{
+	color: #D4800C;
+	transform: translateX(10px);
 }
