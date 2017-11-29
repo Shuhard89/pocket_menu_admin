@@ -34,7 +34,7 @@ body{
 body{
 	overflow-x: hidden;
 	position: relative;
-	font-family: 'Museo', Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	line-height: 1.4;
 	font-weight: normal;
@@ -103,7 +103,7 @@ ol{
 	top: 0;
 	left: 0;
 	will-change: transform;
-	background-image: url('/img/auth_bg.jpg');
+	background-image: url('../assets/authorization/auth_bg.jpg');
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
@@ -484,20 +484,14 @@ a.auth-soc-login-btn__messenger{
 
 .profile-sidebar{
 	width: 300px;
+	height: 100%;
 	background-color: #fff;
 	position: fixed;
 	top: 0;
 	left: 0;
-	bottom: 0;
 	z-index: 100;
 	border-right: 1px solid rgba(34,36,38,.15);
 	box-shadow: 0 1px 2px rgba(34,36,38,.15);
-}
-
-.profile-sidebar-inner{
-	position: relative;
-	padding-bottom: 40px;
-	min-height: 100%;
 }
 
 .profile-sidebar-header{
@@ -566,8 +560,7 @@ a.auth-soc-login-btn__messenger{
 	position: relative;
 }
 
-.profile-sidebar-nav ul > li > a.active,
-.footer-menu-list > li > a.active{
+.profile-sidebar-nav ul > li > a.active{
 	color: #ec910e
 }
 
@@ -952,7 +945,7 @@ i.icon.popup-heading-icon:hover{
 	height: 36px;
 	line-height: 19px;
 	background-color: #F5F5F5;
-	border-radius: .28571429rem;
+	border-radius: 100px;
 }
 
 .profile-settings-list > li .mobile.icon,
@@ -1190,7 +1183,20 @@ a.new-food-name:hover{
 
 .menu-categories-list > li{
 	width: 255px;
-	margin: 28px 8px 0;
+	margin: 0 26px 28px 0;
+}
+
+.menu-categories-list > li:nth-of-type(3n){
+	margin: 0 0 28px 0;
+}
+
+.menu-categories-list > li:nth-last-of-type(1){
+	margin: 0;
+}
+
+.menu-categories-list > li:nth-last-of-type(2),
+.menu-categories-list > li:nth-last-of-type(3):not(:nth-of-type(3)){
+	margin: 0 26px 0 0;
 }
 
 .menu-category-preview{
@@ -1262,7 +1268,6 @@ a.new-food-name:hover{
 }
 
 .no-menu-categories-msg{
-	width: 100%;
 	font-size: 22px;
 	color: #ccc;
 	margin: 60px 0 !important;
@@ -1282,8 +1287,11 @@ a.new-food-name:hover{
 	margin: 0 0 15px 0;
 	position: relative;
 	border-radius: 4px;
-	background-color: #fafafa;
 	transition: background-color .3s ease;
+}
+
+.menu-category-food-items-list > li:hover{
+	background-color: #fafafa;
 }
 
 .menu-category-food-items-list > li:last-of-type{
@@ -1297,7 +1305,6 @@ a.new-food-name:hover{
 	float: left;
 	overflow: hidden;
 	border-radius: 4px;
-	cursor: pointer;
 }
 
 .menu-category-food-item-preview img{
@@ -1308,7 +1315,7 @@ a.new-food-name:hover{
 	transition: transform .5s ease;
 }
 
-.menu-category-food-item-preview:hover img{
+.menu-category-food-items-list > li:hover .menu-category-food-item-preview:not(.menu-category-food-item-preview__default) img{
 	transform: scale(1.1);
 }
 
@@ -1327,7 +1334,6 @@ a.new-food-name:hover{
 .menu-category-food-item-preview-info > h2 a{
 	color: #333;
 	transition: color .3s ease;
-	cursor: pointer;
 }
 
 .menu-category-food-item-preview-info > h2 a:hover{
@@ -1352,13 +1358,21 @@ a.new-food-name:hover{
 	position: absolute;
 	top: 10px;
 	right: 7px;
+	opacity: 0;
+	transform: scale(.5);
 	transition: opacity .3s ease, transform .3s ease;
+	transition-delay: .1s;
 }
 
 .menu-food-item-preview-img{
 	display: block;
 	width: 100%;
 	height: 100%;
+}
+
+.menu-category-food-items-list > li:hover .menu-food-item-preview-btns{
+	opacity: 1;
+	transform: scale(1);
 }
 
 
@@ -1368,30 +1382,37 @@ a.new-food-name:hover{
 /* FOOTER */
 
 .main-footer{
-	width: 100%;
+	min-height: 50px;
+	width: calc(100% - 300px);
 	position: absolute;
 	bottom: 0;
-	left: 0;
+	left: 300px;
 	background-color: #fff;
 	border-top: 1px solid rgba(34,36,38,.15);
-	padding: 10px;
+	padding: 10px 60px;
 	font-size: 14px;
+	line-height: 30px;
 	color: #bbb;
-	z-index: 200;
+}
+
+.footer-copy{
+	display: block;
+	float: left;
 }
 
 .footer-menu-list{
-	text-align: center;
+	float: right;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 }
 
 .footer-menu-list > li{
-	display: inline-block;
-	margin: 0 10px;
+	margin: 0 0 0 20px;
 }
 
 .footer-menu-list > li > a{
-	color: #333;
-	font-size: 10px;
+	color: #bbb;
 	transition: color .3s ease;
 }
 
@@ -1455,7 +1476,6 @@ a.new-food-name:hover{
 	list-style: initial;
 	padding: 0 20px;
 	margin: 10px 0 20px 0;
-	list-style: none;
 }
 
 .text-content-container ul > li,
@@ -1546,14 +1566,4 @@ a.new-food-name:hover{
 .profile-blog-list > li.ui.segment.profile-segment > a:hover .profile-blog-list-item-excerpt > span{
 	color: #D4800C;
 	transform: translateX(10px);
-}
-
-.settings-language-dropdown.ui.button{
-	background: none;
-	border: 1px solid rgba(34,36,38,.15);
-}
-
-.settings-language-dropdown.ui.active.button:active,
-.settings-language-dropdown.ui.active.button:hover{
-	background: none;
 }
