@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="fonts/icon.css">
 	<link rel="stylesheet" href="css/semantic.min.css">
-	<link rel="stylesheet" href="css/croppie.css">
+	<link rel="stylesheet" href="css/cropper.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/mediaq.css">
 </head>
@@ -95,12 +95,11 @@
 									<div class="profile-avatar-container" id="place-crop">
 										<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Avatar">
 										<div class="upload-place-avatar-btn">
-											<input type="file" name="place-avatar" id="place-avatar-upload" accept="image/*" class="place-avatar-btn">
-											<label for="place-avatar-upload">
+											<div class="place-avatar-upload-label">
 												<div class="place-avatar-upload-text">
 													<i class="pencil icon"></i> Загрузить фото
 												</div>
-											</label>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1156,27 +1155,100 @@
 			</div>
 		</div>
 	</div>
-	<div class="ui basic modal small" id="cropper-modal">
+	<div class="ui long modal small" id="cropper-modal">
 	  <div class="content">
-	  	<div class="place-avatar-cropper-wrap">
-			<div id="upload-demo" class="croppie-container"></div>
-	  	</div>
+		<ul class="tabs-controls">
+			<li class="active">Аватар</li>
+			<li>Фон</li>
+		</ul>
+		<ul class="tabs-list">
+			<li class="active">
+			    <div id="newImg"></div>
+
+			    <script type="text/template" id="qq-template-manual-trigger">
+			        <div class="qq-uploader-selector qq-uploader" qq-drop-area-text="Drop files here">
+			            <div class="cropper-btns-wrapper clearfix">
+			                <div id="wrap-new-image-input" class="qq-upload-button-selector qq-upload-button">
+								<div class="ui labeled icon button orange">
+								  <i class="upload icon"></i>
+								  Загрузить фото
+								</div>
+			                </div>
+						    <div id="actions" class="cropper-actions">
+						        <div id="docs-buttons">
+						            <button class="ui icon button" title="Двигать"
+						                type="button"
+						                data-method="setDragMode"
+						                data-option="move">
+										<i class="move icon"></i>
+						            </button>
+
+						            <button class="ui icon button" title="Обрезать"
+						                type="button"
+						                data-method="setDragMode"
+						                data-option="crop">
+										<i class="crop icon"></i>
+						            </button>
+
+						            <button class="ui icon button" title="Отразить по горизонтали"
+						                type="button"
+						                data-method="scaleX"
+						                data-option="-1">
+										<i class="resize horizontal icon"></i>
+						            </button>
+
+
+						            <button class="ui button orange"
+						                type="button"
+						                data-method="getCroppedCanvas"
+						                data-option="{ &quot;maxWidth&quot;: 4096, &quot;maxHeight&quot;: 4096 }">
+										Сохранить
+						            </button>
+						        </div>
+						    </div>
+			            </div>
+
+			            <ul class="qq-upload-list-selector qq-upload-list" aria-live="polite" aria-relevant="additions removals">
+			                <li>
+			                    <div class="img-container qq-thumbnail-wrapper">
+			                        <img
+			                            id="crop-img"
+			                            class="qq-thumbnail-selector" />
+			                    </div>
+
+			                    <button type="button" class="qq-btn qq-upload-cancel-selector qq-upload-cancel">Cancel</button>
+			                </li>
+			            </ul>
+
+			            <dialog class="qq-alert-dialog-selector">
+			                <div class="qq-dialog-message-selector"></div>
+			                <div class="qq-dialog-buttons">
+			                    <button type="button" class="qq-cancel-button-selector">Close</button>
+			                </div>
+			            </dialog>
+			        </div>
+			    </script>
+
+			    <div id="template-manual-trigger"></div>
+
+
+			</li>
+			<li>
+				
+			</li>
+		</ul>
 	  </div>
 	  <div class="actions center">
-		<div class="ui red basic cancel inverted button cancel-place-avatar-btn">
-          <i class="remove icon"></i>
-          Отменить
-      	</div>
-	    <div class="ui green ok inverted button save-place-avatar-btn">
-	      <i class="checkmark icon"></i>
-	      Сохранить
+	    <div class="ui orange cancel button">
+	      Закрыть
 	    </div>
 	  </div>
 	</div>
 	<script src="js/libs/ofi.min.js"></script>
 	<script src="js/libs/jquery-3.2.1.min.js"></script>
 	<script src="js/libs/semantic.min.js"></script>
-	<script src="js/libs/croppie.min.js"></script>
+    <script src="js/libs/cropper.js"></script>
+    <script src="js/libs/fine-uploader.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		$(function() {
@@ -1222,61 +1294,6 @@
 				}
 			});
 
-			// Avatar cropping
-			function avatarUpload() {
-				var $uploadCrop;
-
-				function readFile(input) {
-		 			if (input.files && input.files[0]) {
-			            var reader = new FileReader();
-			            
-			            reader.onload = function (e) {
-							$('.upload-demo').addClass('ready');
-			            	$uploadCrop.croppie('bind', {
-			            		url: e.target.result
-			            	}).then(function(){
-			            		console.log('jQuery bind complete');
-			            	});
-			            	
-			            }
-			            
-			            reader.readAsDataURL(input.files[0]);
-			        }
-			        else {
-				        swal("Sorry - you're browser doesn't support the FileReader API");
-				    }
-				}
-
-				$uploadCrop = $('#upload-demo').croppie({
-					viewport: {
-						width: 300,
-						height: 200
-					},
-					enableExif: true
-				});
-
-				$('#place-avatar-upload').on('change', function () {
-					readFile(this);
-					$('#cropper-modal').modal('setting', 'closable', false).modal('show');
-				});
-				$('.save-place-avatar-btn').on('click', function (ev) {
-					$uploadCrop.croppie('result', {
-						type: 'base64',
-						size: 'viewport'
-					}).then(function (resp) {
-						$('#place-avatar-upload').val('');
-						$('.profile-avatar-container > img').remove();
-						$('.profile-avatar-container').append('<img src="' + resp + '"></img>');
-					});
-				});
-				$('.cancel-place-avatar-btn').on('click', function(ev) {
-					$('#place-avatar-upload').val('');
-					destroy();
-				});
-			}
-
-			avatarUpload();
-
 			// Dropdowns allow additions
 			$('.ui.dropdown.allow-add-dd').dropdown({
 				allowAdditions: true
@@ -1286,6 +1303,162 @@
 			$('#profile-form').on('submit', function(event) {
 				event.preventDefault();
 			});
+
+			// Tabs
+			$('.tabs-controls > li').click(function(event) {
+				var thisIndex = $(this).index();
+
+				$('.tabs-controls > li').removeClass('active').eq(thisIndex).addClass('active');
+				$('.tabs-list > li').removeClass('active').eq(thisIndex).addClass('active');
+			});
+
+			// Avatar cropping
+			$('.upload-place-avatar-btn').on('click', function(event) {
+				event.preventDefault();
+				
+				$('#cropper-modal').modal('show');
+			});
+			window.onload = function () {
+			    'use strict';
+
+			    var manualUploader = new qq.FineUploader({
+			        element: document.getElementById('template-manual-trigger'),
+			        template: 'qq-template-manual-trigger',
+			        multiple: false,
+			        autoUpload: false,
+			        validation: {
+			            allowedExtensions: ['jpeg', 'jpg', 'png'],
+			            itemLimit: 1,
+			            sizeLimit: 5120000 // 50 kB = 50 * 1024 bytes
+			        },
+			        callbacks: {
+			            onSubmitted: function() {
+			                var Cropper = window.Cropper;
+			                var URL = window.URL || window.webkitURL;
+			                var image = document.getElementById('crop-img');
+			                var actions = document.getElementById('actions');
+
+			                var options = {
+			                    aspectRatio: 16 / 9,
+			                    viewMode: 3,
+			                    zoomable: false
+			                };
+			                var cropper;
+			                var uploadedImageURL;
+
+			                /**
+			                 * this is a hack. Change the logic or confirm that it's working correctly anytime
+			                 */
+			                // Import image
+			                var inputImage = document.getElementById('wrap-new-image-input').querySelector('input[type="file"]');
+			                var files = inputImage.files;
+			                var file;
+
+			                if (files && files.length) {
+			                    file = files[ 0 ];
+
+			                    if (uploadedImageURL) {
+			                        URL.revokeObjectURL(uploadedImageURL);
+			                    }
+
+			                    image.src = URL.createObjectURL(file);
+			                    cropper = new Cropper(image, options);
+			                    inputImage.value = null;
+			                }
+			                /**
+			                 * end hack
+			                 */
+
+			                // Buttons
+			                if (!document.createElement('canvas').getContext) {
+			                    $('button[data-method="getCroppedCanvas"]').prop('disabled', true);
+			                }
+
+			                if (typeof document.createElement('cropper').style.transition === 'undefined') {
+			                    $('button[data-method="rotate"]').prop('disabled', true);
+			                    $('button[data-method="scale"]').prop('disabled', true);
+			                }
+
+
+			                // Methods
+			                actions.querySelector('#docs-buttons').onclick = function (event) {
+			                    var e = event || window.event;
+			                    var target = e.target || e.srcElement;
+			                    var cropped;
+			                    var result;
+			                    var data;
+
+			                    if (!cropper) {
+			                        return;
+			                    }
+
+			                    while (target !== this) {
+			                        if (target.getAttribute('data-method')) {
+			                            break;
+			                        }
+
+			                        target = target.parentNode;
+			                    }
+
+			                    if (target === this || target.disabled || target.className.indexOf('disabled') > -1) {
+			                        return;
+			                    }
+
+			                    data = {
+			                        method: target.getAttribute('data-method'),
+			                        target: target.getAttribute('data-target'),
+			                        option: target.getAttribute('data-option') || undefined,
+			                        secondOption: target.getAttribute('data-second-option') || undefined
+			                    };
+
+			                    cropped = cropper.cropped;
+
+			                    if (data.method) {
+			                        switch (data.method) {
+			                            case 'rotate':
+			                                if (cropped && options.viewMode > 0) {
+			                                    cropper.clear();
+			                                }
+
+			                                break;
+
+			                            case 'getCroppedCanvas':
+			                                try {
+			                                    data.option = JSON.parse(data.option);
+			                                } catch (e) {
+			                                    console.log(e.message);
+			                                }
+
+			                                break;
+			                        }
+
+			                        result = cropper[ data.method ](data.option, data.secondOption);
+
+			                        switch (data.method) {
+			                            case 'scaleX':
+			                                target.setAttribute('data-option', -data.option);
+			                                break;
+
+			                            case 'getCroppedCanvas':
+			                                if (result) {
+			                                    var href = result.toDataURL('image/jpeg');
+
+			                                    /**
+			                                     * test
+			                                     */
+			                                    var node = document.createElement('img');
+			                                    node.src = href;
+			                                    document.getElementById('newImg').appendChild(node)
+			                                }
+
+			                                break;
+			                        }
+			                    }
+			                };
+			            }
+			        }
+			    });
+			};
 		});
 	</script>
 </body>
