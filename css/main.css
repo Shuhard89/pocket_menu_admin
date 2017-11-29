@@ -1557,3 +1557,15 @@ a.new-food-name:hover{
 .settings-language-dropdown.ui.active.button:hover{
 	background: none;
 }
+
+.ui.form .field.feedback-field{
+	margin: 0 0 28px 0;
+}
+
+.ui.modal>.content.feedback-success-msg{
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	margin: 30px 0;
+}
