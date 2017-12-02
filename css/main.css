@@ -1693,3 +1693,24 @@ a.new-food-name:hover{
 .page404-content a.ui.button{
 	margin: 0;
 }
+
+.ui.breadcrumb.breadcrumb__menu{
+	margin: 0 0 10px 0;
+	font-size: 13px;
+}
+
+.ui.breadcrumb .active.section{
+	font-weight: normal;
+}
+
+.ui.breadcrumb a{
+	color: #ec910e;
+}
+
+.ui.breadcrumb a:hover{
+	color: #D4800C;
+}
+
+.ui.breadcrumb .active.section{
+	color: rgba(0,0,0,.4);
+}
