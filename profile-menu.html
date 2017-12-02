@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="fonts/icon.css">
 	<link rel="stylesheet" href="css/semantic.min.css">
-	<link rel="stylesheet" href="css/croppie.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/mediaq.css">
 </head>
@@ -84,12 +83,13 @@
 						<h1>Меню</h1>
 					</div>
 					<div class="ui segment profile-segment menu-segment">
-						<form action="#" method="POST" id="menu-search-form" class="ui form">
-							<div class="ui icon input fluid">
-								<input type="text" placeholder="Поиск...">
-								<i class="search icon link"></i>
-							</div>
-						</form>
+						<div class="ui fluid category search">
+						  <div class="ui icon input fluid">
+						    <input class="prompt" type="text" placeholder="Поиск...">
+						    <i class="search icon"></i>
+						  </div>
+						  <div class="results"></div>
+						</div>
 					</div>
 					<div class="ui segment profile-segment menu-segment">
 						<span class="ui orange ribbon label menu-segment-label">Новинки заведения</span>
@@ -431,6 +431,16 @@
 			};
 			$('.new-food-items-slider-wrapper').sly(slyOptions);
 		});
+		// Search
+		$category = $('.category.ui.search');
+		$category
+		  .search({
+		    type: 'category',
+		    apiSettings: {
+		      url: 'https://api.semantic-ui.com/search/category/{query}'
+		    }
+		  })
+		;
 	</script>
 </body>
 </html>

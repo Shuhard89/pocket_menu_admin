@@ -1623,3 +1623,7 @@ a.new-food-name:hover{
 .cropper-actions{
 	float: right;
 }
+
+.ui.search .prompt{
+	border-radius: .28571429rem;
+}
