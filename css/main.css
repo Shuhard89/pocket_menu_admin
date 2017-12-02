@@ -1632,3 +1632,17 @@ a.new-food-name:hover{
 .ui.search .prompt{
 	border-radius: .28571429rem;
 }
+
+.feedback-ta-counter{
+	float: right;
+	font-size: 12px;
+	line-height: 12px;
+	opacity: .5;
+	user-select: none;
+	margin: 5px 0 0 0;
+}
+
+.feedback-ta-counter.red{
+	color: #db2828;
+	opacity: 1;
+}

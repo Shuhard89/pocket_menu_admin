@@ -130,6 +130,11 @@
 								<div class="ui textarea fluid">
 									<textarea placeholder="Введите ваше сообщение" name="user-msg"></textarea>
 								</div>
+								<div class="clearfix">
+									<div class="feedback-ta-counter">
+										<span>0</span>/<span>4000</span>
+									</div>
+								</div>
 							</div>
 						</form>
 					</div>
@@ -220,6 +225,17 @@
 		$('#feedback-form').submit(function(event) {
 			event.preventDefault();
 			$('#feedback-success-msg').modal('show');
+		});
+		// Max textarea chars
+		$('textarea').keyup(function(event) {
+			var msgLength = $(this).val().length;
+
+			$('.feedback-ta-counter > span').eq(0).html(msgLength);
+			if ( msgLength > 4000 ){
+				$('.feedback-ta-counter').addClass('red');
+			} else {
+				$('.feedback-ta-counter').removeClass('red');
+			}
 		});
 	</script>
 </body>
