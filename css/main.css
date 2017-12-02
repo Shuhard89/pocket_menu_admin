@@ -1308,7 +1308,7 @@ a.new-food-name:hover{
 	transition: transform .5s ease;
 }
 
-.menu-category-food-item-preview:hover img{
+.menu-category-food-item-preview:not(.menu-category-food-item-preview__default):hover img{
 	transform: scale(1.1);
 }
 
@@ -1352,7 +1352,12 @@ a.new-food-name:hover{
 	position: absolute;
 	top: 10px;
 	right: 7px;
+	opacity: 0;
 	transition: opacity .3s ease, transform .3s ease;
+}
+
+.menu-category-food-items-list > li:hover .menu-food-item-preview-btns{
+	opacity: 1;
 }
 
 .menu-food-item-preview-img{
