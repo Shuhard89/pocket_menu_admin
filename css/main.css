@@ -1714,3 +1714,13 @@ a.new-food-name:hover{
 .ui.breadcrumb .active.section{
 	color: rgba(0,0,0,.4);
 }
+
+.verify-preview-block{
+	margin: 60px 0 0 0;
+	border-top: 2px solid #ec910e;
+}
+
+.verify-preview-block .fields-heading-remove-acc,
+.verify-preview-block .fields-heading-remove-acc i.icon.popup-heading-icon{
+	color: #ec910e;
+}
