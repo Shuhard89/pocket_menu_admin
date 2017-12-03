@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin Panel - Blog Article</title>
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="fonts/icon.css">
+	<link rel="stylesheet" href="css/semantic.min.css">
+	<link rel="stylesheet" href="css/croppie.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mediaq.css">
+</head>
+<body>
+	<div id="app">
+		<div class="profile-page-wrapper">
+			<div class="mobile-header-pane clearfix">
+				<a href="profile-profile.html" class="mobile-header-logo">
+					<img src="assets/logo.svg" alt="Pocket Menu">
+				</a>
+				<span class="mobile-burger" role="button">
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+			<div class="profile-sidebar">
+				<a href="profile-profile.html" class="profile-sidebar-header">
+					<img src="assets/logo.svg" alt="Pocket Menu">
+				</a>
+				<div class="profile-sidebar-photo">
+					<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto">
+					<span class="ui orange right ribbon label profile-sidebar-photo-ribbon">Faro del porto</span>
+				</div>
+				<nav class="profile-sidebar-nav">
+					<ul>
+						<li>
+							<a href="profile-profile.html">
+								<i class="id card outline icon"></i>
+								<span>Профиль</span>
+							</a>
+						</li>
+						<li>
+							<a href="profile-menu.html">
+								<i class="food icon"></i>
+								<span>Меню</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="newspaper icon"></i>
+								<span>Новости</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="building outline icon"></i>
+								<span>План заведения</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="pie chart icon"></i>
+								<span>Аналитика</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="profile-settings.html">
+								<i class="settings icon"></i>
+								<span>Настройки</span>
+							</a>
+						</li>
+						<li>
+							<a href="index.html">
+								<i class="sign out icon"></i>
+								<span>Выйти</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="profile-content-wrapper">
+				<div class="profile-content-container-wide">
+					<div class="profile-content-container-header">
+						<div class="ui breadcrumb">
+						  <a href="profile-blog.html" class="section">Блог</a>
+						  <div class="divider"> / </div>
+						  <div class="active section">Переписать базу сообщений с нуля и выжить</div>
+						</div>
+					</div>
+					<div class="ui segment profile-segment-wide profile-segment-wide-blog-article">
+						<h1>Переписать базу сообщений с нуля и выжить</h1>
+						<span>17 ноября 2017</span>
+						<div class="profile-segment-wide-blog-article-content text-content-container clearfix">
+							<p>Живое выступление автора статьи Вы можете посмотреть в сообществе <a href="#">VK Tech</a></p>
+							<p>Наши пользователи пишут друг другу сообщения, не зная усталости.</p>
+							<img src="assets/placeholder_content/article1.jpg" />
+							<p>Это довольно много. Если бы Вы задались целью прочитать все сообщения всех пользователей, это бы заняло больше 150 тысяч лет. При условии, что Вы довольно прокачанный чтец и тратите на каждое сообщение не больше секунды.</p>
+							<p>При таком объёме данных критически важно, чтобы логика хранения и доступа к ним была построена оптимально. Иначе в один не такой уж и прекрасный момент может выясниться, что скоро всё пойдёт не так. </p>
+							<p>Для нас этот момент наступил полтора года назад. Как мы к этому пришли и что получилось в итоге — рассказываем по порядку.</p>
+							<h2>История вопроса</h2>
+							<p>В самой первой реализации сообщения ВКонтакте работали на связке PHP-бэкенда и MySQL. Это вполне нормальное решение для небольшого студенческого сайта. Однако этот сайт безудержно рос и начал требовать оптимизировать структуры данных под себя.</p>
+							<p>В конце 2009 года было написано первое хранилище text-engine, а в 2010 на него перевели сообщения.</p>
+							<p>В text-engine сообщения хранились списками — своего рода «почтовыми ящиками». Каждый такой список определяется uid’ом — пользователем-владельцем всех этих сообщений. У сообщения есть набор атрибутов: идентификатор собеседника, текст, вложения и так далее. Идентификатор сообщения внутри «ящика» — local_id, он никогда не изменяется и назначается последовательно для новых сообщений. «Ящики» независимы и друг с другом внутри движка никак не синхронизируются, связь между ними происходит уже на уровне PHP. Посмотреть на структуру данных и возможности text-engine изнутри можно&nbsp;<a target="_blank" href="#">здесь</a>.</p>
+							<img src="assets/placeholder_content/article2.jpg" />
+							<p>Этого было вполне достаточно для переписки двух пользователей. Угадайте, что случилось потом?</p>
+							<p>В мае 2011 года ВКонтакте появились беседы с несколькими участниками — мультичаты. Для работы с ними мы подняли два новых кластера — member-chats и chat-members. Первый хранит данные о чатах по пользователям, второй — данные о пользователях по чатам. Кроме самих списков это, например, пригласивший пользователь и время добавления в чат.</p>
+							<p>— PHP, давай отправим сообщение в чат, — говорит пользователь.&nbsp;</p>
+							<p>— Ну давай, {username}, — говорит PHP.&nbsp;</p>
+						</div>
+						<div class="blog-article-footer clearfix">
+							<a href="profile-blog-article.html" class="next-post-link">Итоги Хакатона 2017</a>
+							<a href="profile-blog-article.html" class="prev-post-link">Новые возможности приложений сообществ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/libs/ofi.min.js"></script>
+	<script src="js/libs/jquery-3.2.1.min.js"></script>
+	<script src="js/libs/semantic.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
