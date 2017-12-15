@@ -83,12 +83,17 @@
 						<h1>Меню</h1>
 					</div>
 					<div class="ui segment profile-segment menu-segment">
-						<div class="ui fluid category search">
+						<div class="ui fluid search">
 						  <div class="ui icon input fluid">
 						    <input class="prompt" type="text" placeholder="Поиск...">
 						    <i class="search icon"></i>
 						  </div>
-						  <div class="results"></div>
+						  <div class="results">
+							<a class="result" href="#">Борщ с ребрышками</a>
+							<a class="result" href="#">Денаро</a>
+							<a class="result" href="#">Корн чаудер</a>
+							<a class="result" href="#">Тан</a>
+						  </div>
 						</div>
 					</div>
 					<div class="ui segment profile-segment menu-segment">
@@ -430,17 +435,16 @@
 				pauseOnHover: true
 			};
 			$('.new-food-items-slider-wrapper').sly(slyOptions);
+
+			// Search
+			$('.search input').on('keyup', function() {
+				$('.results').addClass('transition visible');
+			});
+
+			$('.search input').on('focusout', function() {
+				$('.results').removeClass('transition visible');
+			});
 		});
-		// Search
-		$category = $('.category.ui.search');
-		$category
-		  .search({
-		    type: 'category',
-		    apiSettings: {
-		      url: 'https://api.semantic-ui.com/search/category/{query}'
-		    }
-		  })
-		;
 	</script>
 </body>
 </html>
