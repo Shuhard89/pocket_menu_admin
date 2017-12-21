@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin Panel - Verify Status</title>
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="fonts/icon.css">
+	<link rel="stylesheet" href="css/semantic.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mediaq.css">
+</head>
+<body>
+	<div id="app">
+		<div class="profile-page-wrapper">
+			<div class="mobile-header-pane clearfix">
+				<a href="profile-profile.html" class="mobile-header-logo">
+					<img src="assets/logo.svg" alt="Pocket Menu">
+				</a>
+				<span class="mobile-burger" role="button">
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+			<div class="profile-sidebar">
+				<a href="profile-profile.html" class="profile-sidebar-header">
+					<img src="assets/logo.svg" alt="Pocket Menu">
+				</a>
+				<div class="profile-sidebar-photo">
+					<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto">
+					<span class="ui orange right ribbon label profile-sidebar-photo-ribbon">Faro del porto</span>
+				</div>
+				<nav class="profile-sidebar-nav">
+					<ul>
+						<li class="active">
+							<a href="profile-profile.html">
+								<i class="id card outline icon"></i>
+								<span>Профиль</span>
+							</a>
+						</li>
+						<li>
+							<a href="profile-menu.html">
+								<i class="food icon"></i>
+								<span>Меню</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="newspaper icon"></i>
+								<span>Новости</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="building outline icon"></i>
+								<span>План заведения</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="pie chart icon"></i>
+								<span>Аналитика</span>
+							</a>
+						</li>
+						<li>
+							<a href="profile-settings.html">
+								<i class="settings icon"></i>
+								<span>Настройки</span>
+							</a>
+						</li>
+						<li>
+							<a href="index.html">
+								<i class="sign out icon"></i>
+								<span>Выйти</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="profile-content-wrapper">
+				<div class="profile-content-container-normal">
+					<div class="profile-content-container-header">
+						<h1>Верификация</h1>
+					</div>
+					<div class="ui segment profile-segment menu-segment">
+						<p class="verify-failed-msg">Верификация не пройдена.</p>
+						<div class="verify-failed-reason">
+							<h2 class="fields-heading reason-heading">Причина:</h2>
+							<p>Документы, которые вы загрузили - недействительны.</p>
+						</div>
+					</div>
+					<div class="main-form-buttons">
+						<a href="profile-verify.html" class="ui button orange">
+							Обновить данные
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/libs/ofi.min.js"></script>
+	<script src="js/libs/jquery-3.2.1.min.js"></script>
+	<script src="js/libs/semantic.min.js"></script>
+	<script src="js/libs/sly.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		// Form photo preview
+		var inputFile = $('#scan-file');
+
+		inputFile.on('change', function() {
+			var previewImg = $('.verify-image-placeholder img');
+			var imgSrc = URL.createObjectURL(this.files[0]);
+
+			previewImg.attr('src', imgSrc);
+		});
+	</script>
+</body>
+</html>
