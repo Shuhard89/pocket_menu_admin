@@ -1180,7 +1180,7 @@
 			                <div id="wrap-new-image-input" class="qq-upload-button-selector qq-upload-button">
 								<div class="ui labeled icon button orange">
 								  <i class="upload icon"></i>
-								  Загрузить фото
+								  Загрузить картинку
 								</div>
 			                </div>
 						    <div id="actions" class="cropper-actions">
@@ -1216,7 +1216,6 @@
 						        </div>
 						    </div>
 			            </div>
-
 			            <ul class="qq-upload-list-selector qq-upload-list" aria-live="polite" aria-relevant="additions removals">
 			                <li>
 			                    <div class="img-container qq-thumbnail-wrapper">
@@ -1238,7 +1237,49 @@
 			        </div>
 			    </script>
 
-			    <div id="template-manual-trigger"></div>
+			    <div id="template-manual-trigger">
+					<div class="default-images-container">
+						<span class="default-images-container-heading">или можете выбрать из стандартных:</span>
+						<ul class="default-images-list">
+							<li class="active">
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+							<li>
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+							<li>
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+							<li>
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+							<li>
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+							<li>
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+							<li>
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+							<li>
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+							<li>
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+							<li>
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+							<li>
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+							<li>
+								<img src="assets/placeholder_content/sidebar_profile_photo.png" alt="Faro del porto" />
+							</li>
+						</ul>
+					</div>
+			    </div>
 
 
 			</li>
@@ -1261,6 +1302,12 @@
 	<script src="js/main.js"></script>
 	<script>
 		$(function() {
+			// Default images example
+			$('.default-images-list > li').on('click', function() {
+				$('.default-images-list > li').removeClass('active');
+				$(this).addClass('active');
+			});
+			
 			// Schedule edit
 			$('.schedule-day-btn-edit').click(function() {
 				var $thisRow = $(this).closest('li'),
