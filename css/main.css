@@ -1018,6 +1018,15 @@ i.icon.popup-heading-icon:hover{
 	padding-left: 0;
 	padding-right: 0;
 	text-align: center;
+	background-color: rgba(0,0,0,.05);
+	border: 1px solid rgba(34,36,38,.15);
+	border-right: none;
+}
+
+.ui.labeled.input>.label{
+	background-color: rgba(0,0,0,.05);
+	border: 1px solid rgba(34,36,38,.15);
+	border-left: none;
 }
 
 
