@@ -1846,3 +1846,10 @@ a.new-food-name:hover{
 	color: #db2828;
 	font-size: 16px;
 }
+
+.ui.dropdown>.text{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 100%;
+}
