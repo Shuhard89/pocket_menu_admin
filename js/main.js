@@ -32,6 +32,12 @@ $(document).ready(function() {
 				$('.profile-content-wrapper').dimmer({ closable: false }).dimmer('show');
 			}
 		});
+
+		$menu.on('swipeleft', function() {
+			$burger.removeClass('opened');
+			$menu.removeClass('visible');
+			$('.profile-content-wrapper').dimmer({ closable: false }).dimmer('hide');
+		});
 	}
 
 	mobileMenu();
