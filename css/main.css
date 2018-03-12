@@ -1026,6 +1026,12 @@ i.icon.popup-heading-icon:hover{
 .ui.labeled.input>.label{
 	background-color: rgba(0,0,0,.05);
 	border: 1px solid rgba(34,36,38,.15);
+	border-right: none;
+}
+
+.ui.right.labeled.input>.label{
+	border: 1px solid rgba(34,36,38,.15);
+	border-right: 1px solid rgba(34,36,38,.15);
 	border-left: none;
 }
 
@@ -1861,4 +1867,12 @@ a.new-food-name:hover{
 	text-overflow: ellipsis;
 	overflow: hidden;
 	max-width: 100%;
+}
+
+.auth-page-wrapper{
+	min-height: 100vh;
+}
+
+.auth-sidebar-wrapper{
+	min-height: 100vh;
 }
